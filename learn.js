@@ -161,7 +161,7 @@
        let text = 'hello world'
        console.log(text.charAt(1))
 
-   2. lenght - string uzunligini qaytaradi
+   2. lenght - string (satr) uzunligini qaytaradi
        let text = 'salom'
        alert(text.length)
 
@@ -171,9 +171,70 @@
    
    4. at() - elementning indeksini aniqlaydi
        let salom = 'hello world'
-       console.log(salom.at(2))
+       console.log(salom.at(-2))
+       let salom1 = 'hello world'
+       console.log(salom1.at(2))
+
+       String (satr) belgilarini qismlarga ajratishni 3 ta usuli bor
+       java script pozitsiyalar 0 dan boshlanadi
+         1. slice (start, end)
+         2. substring (start, end)
+         3.substr(start, length)
+
+      1. Slice (tilim) satrni bir qismini chiqaradi va chiqarilgan qismni yangi qatorga qaytaradi
+         Usul ikkita parametr qabul qiladi (boshlang'ich qiymat va oxirgi qiymat)
+         misol:
+          let qism = 'uzbekistan'      
+          console.log(qism.slice(0,5)) // console.log(uzbek)
+        Agar ikkinchi parametr yozilmasa qolgan qismni kesib tashlaydi
+         misol:
+           let word = 'Australia'
+           console.log(word.slice(5))  // console.log(alia)
+        Agar parametr manfiy bo'lsa oxiridan hisoblatdi
+           let word = 'Australia'
+           console.log(word.slice(5))  // console.log(ralia)
+
+      2. substring() - slice() ga o'xshaydi
+         farqi 0 dan kichik boshlang'ich va yakuniy qiymatlarni 0 sifatida qabul qiladi
+         misol:
+          let str = 'Uzbekistan'
+          console.log(str.substring(1,5))  // console.log(zbek)
+          Agar ikkinchi parametr yozilmasa qolgan qismni kesib tashlaydi 
+
+      3.substr() slice() ga o'xshaydi farqi ikkinchi parametr chiqarilgan qismning uzunlugini aniqlaydi
+      misol:
+          let str = 'Uzbekistan'
+          console.log(str.substr(0,5)) //console.log(uzbek)
+
+          SATRLAR ni katta yoki kichik qilishimiz munkin quyida:
+      1. toUpperCase() - harflarni katta qilib beradi
+        misol:
+        let str = 'Uzbekistan'
+        console.log(str.toUpperCase()) //console.log(UZBEKISTAN)
+
+      2. toLowerCase() - harflarni kichik qilib beradi
+      misol:
+        let str = 'Uzbekistan'
+        console.log(str.toLowerCase()) //console.log(uzbekistan)
+
+         concat - ikki yoki undan ortiq qatorlarni birlashtiradi
+         misol: 
+           let text = 'ali'
+           let text1 = 'vali'
+           let text2 = text.concat(' ', text1)
+           console.log(text2)
+
+            Barcha string usullar satrni o'zgartirmaydi balki almashtiradi asli o'zgarmaydi
+     */
+
+       
+
+      
+      
+     
+      
+       
    
-     */ 
     
     
  
