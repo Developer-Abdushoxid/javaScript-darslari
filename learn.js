@@ -170,6 +170,7 @@
     console.log(word.charCodeAt(1))
    
    4. at() - elementning indeksini aniqlaydi
+       at() - metodi 2022 yildan qo'shilgan
        let salom = 'hello world'
        console.log(salom.at(-2))
        let salom1 = 'hello world'
@@ -217,7 +218,7 @@
         let str = 'Uzbekistan'
         console.log(str.toLowerCase()) //console.log(uzbekistan)
 
-         concat - ikki yoki undan ortiq qatorlarni birlashtiradi
+      concat - ikki yoki undan ortiq qatorlarni birlashtiradi
          misol: 
            let text = 'ali'
            let text1 = 'vali'
@@ -225,8 +226,64 @@
            console.log(text2)
 
             Barcha string usullar satrni o'zgartirmaydi balki almashtiradi asli o'zgarmaydi
+      trim() - metodi satrning ikki yon tarafidagi bo'shliqlarni olib tashlaydi
+         misol:
+             let text = ' toshkent  '
+             console.log(text.trim())  // console.log(toshkent)   
+             
+      trimStart() - metodi 2019 yilda qo'shiilgan bu metod satrni boshidan bosh joyni olib tashlaydi
+         misol:
+           let text = ' toshkent  '
+           console.log(text.trimStart())  // console.log(toshkent  ) 
+      trimStart() metodi 2020 yil yanvardan brauzer qo'llab quvvatlaydi
+
+      trimEnd() - metodi 2019 yilda qo'shiilgan bu metod satrni oxiridan bosh joyni olib tashlaydi
+
+      padStart() - metodi boshidan boshlab satrni to'ldiradi bu metod 2017 yilda qo'shilgan
+      misol:
+         let word = '8'
+         let pad = word.padStart(7,'a')
+         document.getElementById('salom').innerHTML = pad  // aaaaaa8
+
+      padEnd() - metodi oxiridan boshlab satrni o'rnatadi bu metod 2017 yilda qo'shilgan
+         let word = '8'
+         let pad = word.padEnd(7,'a')
+         document.getElementById('salom').innerHTML = pad  // 8aaaaaa
+
+      repeat() bu metod satrni bir qator nusxalar bilan qaytaradi
+        misol:
+          let text = "Hello world!";
+          let result = text.repeat(2);
+          document.getElementById('salom').innerHTML = result  // Hello world!Hello world!
+           repeat() satrning bir qator nusxalari bilan qatorni qaytaradi.
+           repeat() yangi qatorni qaytaradi.
+
+      replace() bu metod belgilangan qiymatni satrdagi boshqa qiymat bilan almashtiradi
+        misol:
+          let text = "Hello world!";
+          let result = text.replace('world!','John');
+          document.getElementById('salom').innerHTML = result  // Hello John
+
+          Katta - kichik harflarni o'zgartirish uchun /satr/i dan foydalanamiz
+           let text = "Hello world!";
+          let result = text.replace(/WORLD/i,'John');
+          document.getElementById('salom').innerHTML = result  // Hello John
+          
+          Barcha mosliklarni almashtirish uchun /satr/g dan fodalanamiz
+          misol:
+           let text = "Please visit Microsoft and Microsoft!";
+          let newText = text.replace(/Microsoft/g, "W3Schools");
+           document.getElementById('salom').innerHTML = newText  // Please visit W3Schools and W3Schools!
      */
 
+         
+      
+  
+      
+   
+      
+
+        
        
 
       

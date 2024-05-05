@@ -51,26 +51,24 @@
 // // }
 // // console.log(getBelgi('salom', 4))
 
-// // let item = prompt('Ingliz alifbosidagi istalgan harfni kiriting: ');
-// // function getAsci(i){
-// //   let result = i.charCodeAt(0);
-// //   return result;
-// // }
-// // console.log(getAsci(item));
+// let item = prompt('Ingliz alifbosidagi istalgan harfni kiriting: ');
+// function getAsci(i){
+//   let result = i.charCodeAt(0);
+//   return result;
+// }
+// console.log(getAsci(item));
 
 
 // // 2.2 masala
 
-// // let n = Number(prompt("32 dan katta 126 ga teng yoki kichik bo'lgan Ixtiyoriy butun son kiriting: "));
-
+// let n = Number(prompt("32 dan katta 126 ga teng yoki kichik bo'lgan Ixtiyoriy butun son kiriting: "));
 // function findCharacter() {
 //     if( n > 32  && n <= 126) {
 //         let character = String.fromCharCode(n);
 //         return character;
 //     }
-//   }
-  
-//   // console.log(findCharacter());
+//   } 
+//   console.log(findCharacter());
   
 //   // 2.3
 //   // let str = prompt("Kompyuteringizdagi ixtiyoriy belgini kiriting: ");
