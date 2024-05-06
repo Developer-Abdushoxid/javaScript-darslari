@@ -235,3 +235,50 @@
 //   }
 
 //   console.log(countNumber(str))
+
+     // juft toq sonlarni aniqlash
+
+// const n = prompt('istalgan sonni kiriting :')
+
+// const juftToq = (number) =>{
+//     if(number % 2 === 0){
+//         console.log(`${number} bu juft son`)
+//     } else{
+//         console.log(`${number} bu toq son`)
+//     }  
+// }
+
+// juftToq(n)
+
+    //   ikki sondan kattasini qaytaradigan funksiya
+// const n = prompt('istalgan sonni kiriting :')
+// const m = prompt('istalgan sonni kiriting :')
+
+
+//     function maXDec(number1, number2){
+//         if(number1 >= number2){
+//             return number1
+//         }
+//             return number2
+//     }
+//    console.log(maXDec(n,m))
+
+      // berilgan sonni teskarisiga o'giradigan funksiya
+
+// const n = prompt('istalgan ikki xonalik sonni kiriting :')
+
+// function reservedDec (number){
+//     const numberString = String(number);
+//     const reservedStr = numberString.split('').reverse().join('');
+//     return Number(reservedStr)
+// };
+// console.log(reservedDec(n))
+
+     // Berilgan satrni teskariga o'giradigan funksiya
+// const n = prompt('Istalgan satr kiriting :')
+//  function Satr (str){
+//     const reservedStr = str.split('').reverse().join('');
+//     return reservedStr;
+//  }
+//   console.log(Satr(n));
+

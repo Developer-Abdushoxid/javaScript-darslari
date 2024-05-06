@@ -274,8 +274,80 @@
            let text = "Please visit Microsoft and Microsoft!";
           let newText = text.replace(/Microsoft/g, "W3Schools");
            document.getElementById('salom').innerHTML = newText  // Please visit W3Schools and W3Schools!
+       replaceAll() bu metod 2021 yilda qo'shilgan 
+       replaceAll() Internet Explorerda ishlamaydi
+
+         let text = 'I love cats.
+          Cats are very easy to love.
+           Cats are very popular.'
+         text = text.replaceAll('Cats', 'Dogs')
+         text = text.replaceAll('cats', 'Dogs')
+        console.log(text)
+
+      split() bu metod satrni massivga aylantirish uchun ishlatiladi
+      misol:
+       let text = "a,b,c,d,e,f";
+       const myArray = text.split(",");
+       console.log(myArray)
+
+                ARRAY
+        Java scriptda pozitsiyalar 0 dan boshlanadi
+
+    1. indexOf() bu metod birinchi paydo bo'lgan satrni indeksni qaytaradi
+       misol:
+         let text = "Please locate where 'locate' occurs!";
+         let index = text.indexOf("locate"); 
+         console.log(index)  // 7
+
+    2. lastIndexOf() bu metod satrda belgilangan matnning oxirgi marta paydo
+        bo'lish indeksini belgilaydi agar matn topilmasa -1 chiqadi
+        misol:
+          let text = "Please locate where 'locate' occurs!";
+          let index = text.lastIndexOf("locate");
+          console.log(index)  // 21
+
+    3. match()satrni satrga (yoki oddiy ifodaga) moslashtirish natijalarini o'z ichiga
+       olgan massivni qaytaradi
+       misol:
+          let text = "The rain in SPAIN stays mainly in the plain";
+          const myArr = text.match("stays");
+          console.log(myArr)
+        Agar satrlardagi barcha bir xil elememtlarni topish uchun
+        /satr/gi belgisidan foydalanamiz
+        misol:
+        let text = "The rain in SPAIN stays mainly in the plain";
+         const  text1= text.match(/ain/gi);
+         console.log(text1)
+
+    4. matchALL() bu metod satrdagi bir xil elementlarni barchasini qaytaradi
+       misol:
+        let txt = 'I love you cats. Cats are very easy to love.Cats are very popular';
+        let text1 = txt.matchAll('Cats')
+        console.log(text1)
+      matchALL() bu metod 2020 yilda qo'shilgan
+
+    5. includes() metod agar satrda belgilangan qiymat bo'lsa true chiqadi
+        aks holda false qiymat chiqadi
+        misol:
+      let text = "Hello world, welcome to the universe.";
+     let text1 = text.includes("world");
+     console.log(text1)
+          
+      Java scriptda back-tics usuli sintaksisi quyidagicha:
+      let text = `satr`
+
+      Java scriptda interpolatsiya usuli sintaksisi quyidagicha:
+      ${satr nomi}
+      misol:
+       let firstName = "John";
+       let lastName = "Doe";
+       let text = `Welcome ${firstName}, ${lastName}!`;
+       console.log(text)
      */
 
+    
+        
+     
          
       
   
