@@ -343,35 +343,244 @@
        let lastName = "Doe";
        let text = `Welcome ${firstName}, ${lastName}!`;
        console.log(text)
-     */
 
-    
+       java scriptda raqamlar har doim 64 bitli suzuvchi nuqtadir
+       JavaScript qoʻshish va birlashtirish uchun + operatoridan foydalanadi.
+       Raqamlar qo'shiladi. Satrlar birlashtiriladi.
+       java scriptda raqamni satrga qo'shsangiz satr bo'lib chiqadi
+       agar ikkita raqam uchinchi satr kiritsabgiz birinchi raqamni qo'shadi
+       keyin satrni birlashtiradi
+       misol:
+        let x = 10;
+        let y = 20;
+        let z = "30";
+        let result = x + y + z;
+        console.log(result)   // 3030
+
+        JavaScript barcha raqamli operatsiyalarda satrlarni raqamlarga aylantirishga harakat qiladi:
+        misol:
+        let x = "100";
+        let y = "10";
+        let z = x / y; // 10
+
+        Lekin + bu belgi satrlar hisoblanmaydi balki biriktiriladi
         
+        Infinity(yoki -Infinity) eng katta raqamdan tashqari raqamni hisoblasangiz, JavaScript qaytariladigan qiymatdir.
+        misol:
+        let myNumber = 2;
+        let txt = '';
+// Execute until Infinity
+       while (myNumber != Infinity) {
+      myNumber = myNumber * myNumber;
+      txt = txt + myNumber + "<br>";
+}
+     document.getElementById('salom').innerHTML = txt
+
+     JavaScript raqamli konstantalarni, agar ular oldida 0x bo'lsa, o'n oltilik deb izohlaydi.
+
+     toString()raqamni satr sifatida qaytaradi.
+
+     valueOf()raqamni raqam sifatida qaytaradi.
+
+     Hozirgi sanani ko'rish
+       let sana = Date()
+       console.log(sana)
+
+    Integer() metod agar kiritilgan son butun bo'lsa true 
+      butun bo'lmasa false qaytaradi
+        let x = Number.isInteger(10);
+         console.log(x)
+
+      Number.EPSILON1 va 1 dan katta bo'lgan eng kichik suzuvchi nuqta o'rtasidagi farq.
+      misol:
+      let x = Number.EPSILON;
+
+      Number.MAX_VALUEJavaScript-da mumkin bo'lgan eng katta sonni ifodalovchi doimiydir.
+      misol:
+        let number = Number.MAX_VALUE
+        console.log(number)
+
+        Number.MIN_VALUEJavaScript-da mumkin bo'lgan eng kichik sonni ifodalovchi doimiydir.
+        misol:
+        let number = Number.MIN_VALUE
+        console.log(number)
+
+        Number.MAX_SAFE_INTEGERJavaScript-dagi maksimal xavfsiz butun sonni ifodalaydi.
+        misol:
+          let number = Number.MAX_SAFE_INTEGER
+           console.log(number) 
+
+           Number.MIN_SAFE_INTEGERJavaScript-dagi minimal xavfsiz butun sonni ifodalaydi.
+           misol:
+            let number = Number.MIN_SAFE_INTEGER
+            console.log(number)
+
+               ARRAY - MASSIVLAR
+
+   Array bu bitta nom ostida ko'p qiymatlarni saqlash uchun ishlatiladi va 
+     array larga indeks raqam orqali qiymatlarni topish mumkin
+  Bo'sh massiv quyidagi ko'ninishda bo'ladi:
+    const array_name = [ item 1, item 2, ...]
+  Massiv indeksi 0 dan boshlanadi
+  Massivni satrlarga quyidagicha o'zgartiriladi:
+    const fruit = ['Banana', 'Orange', 'Apple', 'Mango']
+    document.getElementById('example').innerHTML = fruit.toString();
+
+    Massivlar bu obyektlarning maxsus turi java scriptda typeof operatori 
+     massiv uchun 'obyektni' qaytaradi
+
+    Massivlarga elementlarga kirish uchun indeksdan foydaniladi
+    Obyektlar uchun elementlarga kirish uchun nomlardan foydaniladi
+    Obyektlar kalit qiymat hisobida ma'lumot saqlanadi
+    misol:
+    const person = {
+      firstName: 'john',
+      lastName: 'doe',
+      age: '23'
+    }
+
+    let result = person.firstName
+    console.log(result)
+
+    Massillarning uzunligi (length) dan foydalanamiz
+    misol:
+    const fruits = ["Banana", "Orange", "Apple", "Mango"];
+     let length = fruits.length;
+     console.log(length)
+    Birinchi massivning birinchisiga kirish uchun quyidagicha yo'l tutiladi
+     const fruits = ["Banana", "Orange", "Apple", "Mango"];
+     let length = fruits[1];
+     console.log(length)
+
+    Birinchi massivning oxiriga kirish uchun quyidagicha yo'l tutiladi
+     const fruits = ["Banana", "Orange", "Apple", "Mango"];
+     let length = fruits[fruits.length-1];
+     console.log(length)
      
-         
-      
+     Massiv elementlarini aylanish
+     const fruits = ["Banana", "Orange", "Apple", "Mango"];
+     let fLen = fruits.length;
+      let text = "<ol>";
+      for (let i = 0; i < fLen; i++) {
+        text += "<li>" + fruits[i] + "</li>";
+      }
+      text += "</ol>";
+      document.getElementById('example').innerHTML = text
+
+      Massivga ma'lumot qo'shish uchun 'push()' dan foydalanamiz
+      misol:
+       const fruits = ["Banana", "Orange", "Apple", "Mango"];
+       fruits.push('lemon')   
+       console.log(fruits)
+        
+          ARRAY METODLAR
+
+1.  java scriptda massivning uzunligini "length" dan foydalanamiz
+    const fruits = ["Banana", "Orange", "Apple", "Mango"];
+     let size = fruits.length;
+
+2. toString - massivni (vergul bilan ajratiladigan) massiv qiymatlar qatoriga aylantiradi
+  misol:
+          const fruits = ["Banana", "Orange", "Apple", "Mango"];
+          document.getElementById("example").innerHTML = fruits.toString();
+
+3. at() - massiv ichidagi elementni olishda ishlatiladi  2022 yilda qo'shilgan
+      misol:
+       const fruits = ["Banana", "Orange", "Apple", "Mango"];
+       let fruit = fruits.at[2];
+
+4. join() - barcha massiv elementlarii satrga birlashtiradi
+   toString() bilan bir xil ammo farqi join() da orasiga belgi qo'yish munkin
+   misol:
+     const fruits = ["Banana", "Orange", "Apple", "Mango"];
+     document.getElementById("one").innerHTML = fruits.join(" @ ");
+
+5. pop() - massivdan oxirgi elementni olib tashlaydi va olib tashlangan qiymatni qaytaradi
+   misol:
+       const fruits = ["Banana", "Orange", "Apple", "Mango"];
+      document.getElementById("one").innerHTML = fruits.pop();
+
+6. push() bu massiv oxiriga element qo'shadi
+    misol:
+      const fruits = ["Banana", "Orange", "Apple", "Mango"];
+        fruits.push("Kiwi");
+
+7. shift() - massivning birinchi elementini olib tashlaydi
+misol:
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("one").innerHTML = fruits.shift();
   
-      
-   
-      
+8. unshift() - massivga yangi element qo'shadi (boshiga)
+ misol:
+    const fruits = ["Banana", "Orange", "Apple", "Mango"];
+    fruits.unshift("Lemon");
+    document.getElementById("one").innerHTML = fruits
 
-        
-       
+    Massivning elementlarini o'zgartirish uchun indeksidan ham foydalansak bo'ladi
+    misol:
+      const fruits = ["Banana", "Orange", "Apple", "Mango"];
+      fruits[0] = "Kiwi";
+      document.getElementById("one").innerHTML = fruits
 
-      
-      
-     
-      
-       
-   
-    
-    
+      delete() metodi massivdan element o'chirishda foydalaniladi
+      AMMO TAVSIYA BERILMAYDI uning o'rniga pop() yoki shift() tavsiya beriladi
+9. concat() - massivlarni birlashtirishda ishlatiladi va yangi massiv yaratadi va asl massivni o'zgartirmaydi
+    misol:
+      const myGirls = ["Cecilie", "Lone"];
+      const myBoys = ["Emil", "Tobias", "Linus"];
+      console.log(myGirls.concat(myBoys)) ;
+
+10. coptWithin() - massiv elementlarini massivdagi boshqa joyga ko'chiradi
+   Bu massiv ikkita parametr qabul qiladi(1-parametr - qayerga) (2-parametr - qaysi elementni o'chirish kerak) 
  
+11. flat() - 2019 yilda qo'shilgan metod ma'lum bir chuqurlikka birlashtirilgan pastki qator elementlari bilan yangi massiv yaratadi.
+      ya'ni massivlarni tartiblab beradi
+     misol:
+      const myArr = [[1,2],[3,4],[5,6]];
+      console.log(myArr.flat());
+
+12. splice - massivga yangi element qo'shadi
+ Bu massiv ikkita parametr qabul qiladi(1-parametr - qayerga) (2-parametr - qaysi elementni o'chirish kerak)
+ splice() metodidan foydanib o'chirish tavsiya qilinadi
+     misol:
+      const fruits = ["Banana", "Orange", "Apple", "Mango"];
+      fruits.splice(2, 0, "Lemon", "Kiwi");
+      console.log(fruits)
+13. toSpliced() - 2023 Array toSpliced() usulini asl massivni oʻzgartirmasdan massivni birlashtirishning xavfsiz usuli sifatida qoʻshdi.
+    toSpliced() usuli va eski splice() usuli oʻrtasidagi farq shundaki, yangi usul asl massivni oʻzgarmagan holda yangi massiv yaratadi,
+     eski usul esa asl massivni oʻzgartirdi
+     misol:
+       const months = ["Jan", "Feb", "Mar", "Apr"];
+     console.log(months)
+    const spliced = months.toSpliced(0,1);
+    console.log(spliced)
+
+14. slice() - massivning bir qismini yangi massivga ajratadi:
+     
+     misol:
+      const fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+      console.log(fruits)
+      const citrus = fruits.slice(1);
+      console.log(citrus)
+      slice()ikkita argumentni qabul qilishi mumkin slice(1, 3).
+
+slice()ikkita argumentni qabul qilishi mumkin slice(1, 3).
+Keyin usul boshlang'ich argumentdan elementlarni va 
+yakuniy argumentgacha (lekin shu jumladan emas) elementlarni tanlaydi.   
+misol:
+  const fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+  console.log(fruits)
+  const citrus = fruits.slice(1, 3);
+  console.log(citrus)
+*/
+
+     
+
+
+
+   
+
 
       
-
-         
-
-
 
 
