@@ -31,13 +31,6 @@
 
 // // console.log(getAsci(item));
 
-// // 10 marta salom chiqarish
-
-// // for (let i = 0; i < 10; i++) {
-// //     console.log("salom");
-// // }
-
-// // 
 
 // // let n = "Number(prompt('32 dan katta 126 ga teng yoki kichik bo'lgan ixtiyoriy son kiriting: '))";
 

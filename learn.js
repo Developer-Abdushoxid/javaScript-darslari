@@ -438,7 +438,6 @@
       lastName: 'doe',
       age: '23'
     }
-
     let result = person.firstName
     console.log(result)
 
@@ -447,6 +446,7 @@
     const fruits = ["Banana", "Orange", "Apple", "Mango"];
      let length = fruits.length;
      console.log(length)
+
     Birinchi massivning birinchisiga kirish uchun quyidagicha yo'l tutiladi
      const fruits = ["Banana", "Orange", "Apple", "Mango"];
      let length = fruits[1];
@@ -500,15 +500,17 @@
        const fruits = ["Banana", "Orange", "Apple", "Mango"];
       document.getElementById("one").innerHTML = fruits.pop();
 
-6. push() bu massiv oxiriga element qo'shadi
+6. shift() - massivning birinchi elementini olib tashlaydi
+    misol:
+    const fruits = ["Banana", "Orange", "Apple", "Mango"];
+    document.getElementById("one").innerHTML = fruits.shift();
+
+7. push() bu massiv oxiriga element qo'shadi
     misol:
       const fruits = ["Banana", "Orange", "Apple", "Mango"];
         fruits.push("Kiwi");
 
-7. shift() - massivning birinchi elementini olib tashlaydi
-misol:
-const fruits = ["Banana", "Orange", "Apple", "Mango"];
-document.getElementById("one").innerHTML = fruits.shift();
+
   
 8. unshift() - massivga yangi element qo'shadi (boshiga)
  misol:
@@ -534,7 +536,7 @@ document.getElementById("one").innerHTML = fruits.shift();
    Bu massiv ikkita parametr qabul qiladi(1-parametr - qayerga) (2-parametr - qaysi elementni o'chirish kerak) 
  
 11. flat() - 2019 yilda qo'shilgan metod ma'lum bir chuqurlikka birlashtirilgan pastki qator elementlari bilan yangi massiv yaratadi.
-      ya'ni massivlarni tartiblab beradi
+      ya'ni massivlarni bir qatorda joylashtirib beradi
      misol:
       const myArr = [[1,2],[3,4],[5,6]];
       console.log(myArr.flat());
@@ -555,7 +557,7 @@ document.getElementById("one").innerHTML = fruits.shift();
     const spliced = months.toSpliced(0,1);
     console.log(spliced)
 
-14. slice() - massivning bir qismini yangi massivga ajratadi:
+14. slice() - massivning bir qismini olib yangi massivga ajratadi:
      
      misol:
       const fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
@@ -573,10 +575,6 @@ misol:
   const citrus = fruits.slice(1, 3);
   console.log(citrus)
 */
-
-     
-
-
 
    
 
