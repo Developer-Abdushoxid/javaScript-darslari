@@ -275,3 +275,37 @@
 //  }
 //   console.log(Satr(n));
 
+//  Berilgan raqamlarni tartiblash
+// const point = [12,34,11,3,34,45,78,23];
+// point.sort(function(a,b){
+//   return a - b
+// })
+// console.log(point)
+
+//  Berilgan raqamlarni teskarisiga tartiblash
+// const point = [12,34,11,3,34,45,78,23];
+// point.sort(function(a,b){
+//   return b - a
+// })
+// console.log(point)
+
+// Berilgan raqamlarni sorti bilan tartiblash
+// const myArr = [
+//      {name:"X00",price:100 },
+//      {name:"X01",price:100 },
+//      {name:"X02",price:100 },
+//      {name:"X03",price:100 },
+//      {name:"X04",price:110 },
+//      {name:"X05",price:110 },
+//      {name:"X06",price:110 },
+//      {name:"X07",price:110 },
+//      {name:"X08",price:120 }
+//    ];
+   
+//    myArr.sort( (p1, p2) => {
+//      if (p1.price < p2.price) return -1;
+//      if (p1.price > p2.price) return 1;
+//      return 0;
+//    });
+//    console.log(myArr)
+
