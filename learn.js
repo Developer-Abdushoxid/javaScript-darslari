@@ -527,6 +527,7 @@
 
 //       delete() metodi massivdan element o'chirishda foydalaniladi
 //       AMMO TAVSIYA BERILMAYDI uning o'rniga pop() yoki shift() tavsiya beriladi
+
 // 9. concat() - massivlarni birlashtirishda ishlatiladi va yangi massiv yaratadi va asl massivni o'zgartirmaydi
 //     misol:
 //       const myGirls = ["Cecilie", "Lone"];
@@ -716,14 +717,14 @@
 // 5. 
 //   reduce() usuli har bir massiv elementida bitta qiymat ishlab chiqarish(uni kamaytirish)
 //     uchun funksiyani ishga tushiradi
-    // const numbers = [45, 4, 9, 16, 25];
-    // let sum = numbers.reduce(myFunction);
+  //   const numbers = [45, 4, 9, 16, 25];
+  //   let sum = numbers.reduce(myFunction);
     
-    // document.getElementById("one").innerHTML = "The sum is " + sum;
+  //  document.getElementById("one").innerHTML = "The sum is " + sum;
     
-    // function myFunction(total, value) {
-    //   return total + value;
-    // }
+  //   function myFunction(total, value) {
+  //     return total + value;
+  //   }
 
   // 6. 
   // Array.from() uzunligi xususiyatiga ega har qanday obyektdan yoki har qanday takrorlanadigan obyektdan Array obyektini qaytaradi
@@ -771,8 +772,92 @@
 // const d = new Date("03/25/2015");
 
 // Date.parse()Agar sizda haqiqiy sana qatori bo'lsa, uni millisekundlarga aylantirish usulidan foydalanishingiz mumkin .
+// let msec = Date.parse('May 12,2024');
+// console.log(msec)
 
-let msec = Date.parse('May 12,2024');
-console.log(msec)
+// js da yilni ko'rsatish
+// const d = new Date('2024-05-13');
+// console.log(d.getFullYear());
+
+// getTimezoneOffset()mahalliy vaqt va UTC vaqti o'rtasidagi farqni (daqiqalarda) qaytaradi
+// const d = new Date();
+// console.log(d.getTimezoneOffset())
+
+
+            // JAVASCRIPT MATH OBJECT
+
+// let n = Math.PI
+// console.log(n)
+
+// Boshqa obyektlardan farqli Math obyektida kpnstruktor yo'q
+// Math obyekti sitatikdir
+
+// Har qanday Math xususiyatining sintaksisi:
+// Math.property
+
+// Java scriptda 8 ta matematik konstantalarni taqdim etadi :
+
+// Math.E        // returns Euler's number
+// Math.PI       // returns PI
+// Math.SQRT2    // returns the square root of 2
+// Math.SQRT1_2  // returns the square root of 1/2
+// Math.LN2      // returns the natural logarithm of 2
+// Math.LN10     // returns the natural logarithm of 10
+// Math.LOG2E    // returns base 2 logarithm of E
+// Math.LOG10E   // returns base 10 logarithm of E
+
+// Raqamni butun songa 4 ta usul bilan yaxlitlash mumkin
+
+ // 1. 
+//  Math.round(x) - x ni eng yaqin butun songa yaxlitlangan holda qaytaradi
+// console.log(Math.round(5.4))
+
+// 2.
+//  Math.ceil(x) eng yaqin butun songa yaxlitlangan x qiymatini qaytaradi
+// 4.1 ni ham 5 ga yaxlitlaydi
+// console.log(Math.ceil(4.1))
+
+// 3.
+// Math.floor(x)x ning eng yaqin butun soniga yaxlitlangan qiymatini qaytaradi
+// 4.7 ni ham 4 ga yaxlitlaydi
+// console.log(Math.floor(4.7))
+
+// 4.
+// Math.trunc(x)x ning butun qismini qaytaradi
+//  console.log(Math.trunc(4.1))
+
+// 5.
+// Math.sign(x)agar x salbiy, null yoki musbat bo'lsa, qaytaradi
+// salbiy bo'lsa -1 qaytaradi musbat bo'lsa 1 qaytaradi
+//  console.log(Math.sign(7))
+
+// Math.pow(x, y)x qiymatini y kuchiga qaytaradi
+  // console.log(Math.pow(5, 3)) // 125
+
+  // Math.sqrt(x)x ning kvadrat ildizini qaytaradi
+  // console.log(Math.sqrt(2024))
+
+  // Math.abs(x)x ning mutlaq (musbat) qiymatini qaytaradi
+//  console.log(Math.abs(-5.1))
+
+// Math.sin(x)x burchakning sinusini (-1 va 1 orasidagi qiymat) qaytaradi
+//  console.log(Math.sin())
+
+// Math.min()va Math.max()argumentlar ro'yxatidagi eng past yoki eng yuqori qiymatni topish uchun ishlatilishi mumkin:
+// console.log(Math.min(12,8,73,47,6,12,9,))  // 6
+// console.log(Math.max(12,8,73,47,6,12,9,))  // 73
+
+
+// console.log(Math.random())
+
+
+
+
+
+
+
+
+
+
 
 
