@@ -165,9 +165,9 @@
 //        let text = 'salom'
 //        alert(text.length)
 
-//    3. charCodeAt() - unicode dagi indeksini qaytaradi
-//       let word = 'assalomu aleykum'
-//     console.log(word.charCodeAt(1))
+  //  3. charCodeAt() - unicode dagi indeksini qaytaradi
+  //     let word = 'assalomu aleykum'
+  //   console.log(word.charCodeAt(1))
    
 //    4. at() - elementning indeksini aniqlaydi
 //        at() - metodi 2022 yildan qo'shilgan
@@ -339,10 +339,9 @@
 //       Java scriptda interpolatsiya usuli sintaksisi quyidagicha:
 //       ${satr nomi}
 //       misol:
-//        let firstName = "John";
-//        let lastName = "Doe";
-//        let text = `Welcome ${firstName}, ${lastName}!`;
-//        console.log(text)
+      //  let firstName = "John";
+      //  let lastName = "Doe";
+      //  console.log(`Welcome ${firstName}, ${lastName}!`)
 
 //        java scriptda raqamlar har doim 64 bitli suzuvchi nuqtadir
 //        JavaScript qoʻshish va birlashtirish uchun + operatoridan foydalanadi.
@@ -422,14 +421,14 @@
 //   Bo'sh massiv quyidagi ko'ninishda bo'ladi:
 //     const array_name = [ item 1, item 2, ...]
 //   Massiv indeksi 0 dan boshlanadi
+//     Massivlarga elementlarga kirish uchun indeksdan foydaniladi
 //   Massivni satrlarga quyidagicha o'zgartiriladi:
 //     const fruit = ['Banana', 'Orange', 'Apple', 'Mango']
 //     document.getElementById('example').innerHTML = fruit.toString();
-
 //     Massivlar bu obyektlarning maxsus turi java scriptda typeof operatori 
 //      massiv uchun 'obyektni' qaytaradi
 
-//     Massivlarga elementlarga kirish uchun indeksdan foydaniladi
+
 //     Obyektlar uchun elementlarga kirish uchun nomlardan foydaniladi
 //     Obyektlar kalit qiymat hisobida ma'lumot saqlanadi
 //     misol:
@@ -547,9 +546,9 @@
 //  Bu massiv ikkita parametr qabul qiladi(1-parametr - qayerga) (2-parametr - qaysi elementni o'chirish kerak)
 //  splice() metodidan foydanib o'chirish tavsiya qilinadi
 //      misol:
-//       const fruits = ["Banana", "Orange", "Apple", "Mango"];
-//       fruits.splice(2, 0, "Lemon", "Kiwi");
-//       console.log(fruits)
+      // const fruits = ["Banana", "Orange", "Apple", "Mango"];
+      // fruits.splice(2, 0, "Lemon", "Kiwi");
+      // console.log(fruits)
 // 13. toSpliced() - 2023 Array toSpliced() usulini asl massivni oʻzgartirmasdan massivni birlashtirishning xavfsiz usuli sifatida qoʻshdi.
 //     toSpliced() usuli va eski splice() usuli oʻrtasidagi farq shundaki, yangi usul asl massivni oʻzgarmagan holda yangi massiv yaratadi,
 //      eski usul esa asl massivni oʻzgartirdi
@@ -720,7 +719,7 @@
   //   const numbers = [45, 4, 9, 16, 25];
   //   let sum = numbers.reduce(myFunction);
     
-  //  document.getElementById("one").innerHTML = "The sum is " + sum;
+  //   "The sum is " + sum;document.getElementById("one").innerHTML =
     
   //   function myFunction(total, value) {
   //     return total + value;
@@ -831,29 +830,85 @@
 // salbiy bo'lsa -1 qaytaradi musbat bo'lsa 1 qaytaradi
 //  console.log(Math.sign(7))
 
+// 6.
 // Math.pow(x, y)x qiymatini y kuchiga qaytaradi
   // console.log(Math.pow(5, 3)) // 125
 
+  // 7.
   // Math.sqrt(x)x ning kvadrat ildizini qaytaradi
   // console.log(Math.sqrt(2024))
 
+  // 8.
   // Math.abs(x)x ning mutlaq (musbat) qiymatini qaytaradi
 //  console.log(Math.abs(-5.1))
 
+// 9.
 // Math.sin(x)x burchakning sinusini (-1 va 1 orasidagi qiymat) qaytaradi
 //  console.log(Math.sin())
 
+// 10.
 // Math.min()va Math.max()argumentlar ro'yxatidagi eng past yoki eng yuqori qiymatni topish uchun ishlatilishi mumkin:
 // console.log(Math.min(12,8,73,47,6,12,9,))  // 6
 // console.log(Math.max(12,8,73,47,6,12,9,))  // 73
 
-
+// 11.
+// Math.random - 0 va 1 orasidagi qiymatlarni qaytaradi (render qiladi)
 // console.log(Math.random())
 
+// 12.
+// Math.log(x) x ning natural logarifmini qaytaradi
+
+/*
+abs(x) x ning mutlaq qiymatini qaytaradi
+acos(x) X ning arkkosinini radianda qaytaradi
+acosh(x) x ning giperbolik arkkosinini qaytaradi
+asin(x) X ning arksinusini radianda qaytaradi
+asinh(x) x ning giperbolik yoyini qaytaradi
+atan(x) -PI/2 va PI/2 radianlar orasidagi raqamli qiymat sifatida x ning arktangentini qaytaradi
+atan2(y, x) Argumentlar qismining arktangentini qaytaradi
+atanh(x) x ning giperbolik arktangentini qaytaradi
+cbrt(x) x ning kub ildizini qaytaradi
+ceil(x) eng yaqin butun songacha yuqoriga yaxlitlangan x ni qaytaradi
+cos(x) x ning kosinusini qaytaradi (x radianda)
+cosh(x) x ning giperbolik kosinusini qaytaradi
+exp(x) Ex qiymatini qaytaradi
+floor(x) X ni qaytaradi, pastga qarab eng yaqin butun songa yaxlitlanadi
+log(x) x ning natural logarifmini (E asosi) qaytaradi
+max(x, y, z, ..., n) Eng yuqori qiymatga ega raqamni qaytaradi
+min(x, y, z, ..., n) Eng kichik qiymatga ega raqamni qaytaradi
+pow(x, y) x ning qiymatini y darajasiga qaytaradi
+random() 0 va 1 orasidagi tasodifiy sonni qaytaradi
+round(x) x ni eng yaqin butun songa yaxlitlaydi
+belgisi(x) Agar x manfiy, null yoki musbat (-1, 0, 1) boʻlsa, qaytaradi
+sin(x) x ning sinusini qaytaradi (x radianda)
+sinh(x) x ning giperbolik sinusini qaytaradi
+sqrt(x) x ning kvadrat ildizini qaytaradi
+tan(x) Burchak tangensini qaytaradi
+tanh(x) Sonning giperbolik tangensini qaytaradi
+trunc(x) Raqamning butun qismini qaytaradi (x)
+*/
+
+// java scriptda mantiqiy qiymatdan birini ifodalaydi : true va false
+// mantiqiy funksiya Boolean() hisoblanadi
+// const a = Boolean(10 > 9)
+// console.log(a)
 
 
+// ==	equal to	x == 8	false	
+// x == 5	true	
+// x == "5"	true	
+// ===	equal value and equal type	x === 5	true	
+// x === "5"	false	
+// !=	not equal	x != 8	true	
+// !==	not equal value or not equal type	x !== 5	false	
+// x !== "5"	true	
+// x !== 8	true	
+// >	greater than	x > 8	false	
+// <	less than	x < 8	true	
+// >=	greater than or equal to	x >= 8	false	
+// <=	less than or equal to	x <= 8	true
 
-
+// Taqqoslash operatorlari qiymatlarni solishtirish va natijaga qarab harakat qilish uchun shartli iboralarda ishlatilishi mumkin:
 
 
 

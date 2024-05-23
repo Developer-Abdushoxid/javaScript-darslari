@@ -309,3 +309,64 @@
 //    });
 //    console.log(myArr)
 
+
+// Kiritilgan son berilgan chegara (range) ichidaligini aniqlovchi dastur tuzing
+
+// const inRange = (min, max, number) => {
+//      if(number >= min && number <= max){
+//           console.log(`Berilgan ${number} soni ${min} va ${max} orasida`);
+//      }else{
+//           console.log(`Berilgan son ${min} va ${max} orasida emas`)
+//      }
+// }
+//      const minRange = 10;
+//      const maxRange = 30;
+//      const givenNumber = 20;
+// inRange(minRange,maxRange,givenNumber);
+   
+
+// Berilgan ikki son ustida ko'rsatilgan arifmetik amalni bajaring va console.logga chiqaring
+
+// const simpleCalculator = (num1, num2, oper) =>{
+//      switch(oper) {
+//           case "add":
+//                console.log(`Yig'indisi: ${num1 + num2}`);
+//                break;
+//           case "subtrack":
+//              console.log(`Yig'indisi: ${num1 - num2}`);
+//               break;
+
+//           case "multiply":
+//              console.log(`Yig'indisi: ${num1 * num2}`);
+//              break;
+
+//           case "divide":
+//                console.log(`Yig'indisi: ${num1 / num2}`);
+//                break;
+
+//           default:
+//                console.log(`Aniqlanmagan amal`);
+                       
+//      }
+// }
+
+// const a = 20;
+// const b = 5;
+// const operation = 'add'
+// simpleCalculator(a,b,operation)
+
+// 10 dan kichik 0 dan katta raqamni tasodifiy tanlansin
+//  const a = Math.floor(Math.random() * 10);
+//  document.getElementById("one").innerHTML = a;
+
+// taqqoslash operatorida amaliyot
+// const n = prompt('yosh kiriting')
+// function myFunction(age){
+// if (age < 18) {
+//   return "Too young to buy coca cola"
+// }else{
+//   return "you can buy alcohol"
+// };
+//   12
+// }
+// document.getElementById('one').innerHTML = (myFunction(n))
