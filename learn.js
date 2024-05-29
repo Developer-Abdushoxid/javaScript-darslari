@@ -658,21 +658,21 @@
     // console.log(reversed)
 
 // 5. 
-  // Math.min.apply() massivdagi eng past raqamni topish uchun ishlatiladi
+  // Math.min() massivdagi eng past raqamni topish uchun ishlatiladi
   // const points = [40, 100, 5, 25, 10];
   // document.getElementById("one").innerHTML = myArrayMin(points);
   
   // function myArrayMin(arr) {
-  //   return Math.min.apply(null, arr);
+  //   return Math.min(null, arr);
   // }
 
   // 6. 
-  // Math.max.apply() massivdagi eng katta raqamni topish uchun ishlatiladi
+  // Math.max() massivdagi eng katta raqamni topish uchun ishlatiladi
   //    const points = [40, 100, 5, 25, 10];
   //  console.log(myArrayMax(points));
   
   //  function myArrayMax(arr) {
-  //    return Math.max.apply(null, arr);
+  //    return Math.max(null, arr);
   //  }
 
             //  JS MASSIVINI TAKRORLASH
@@ -691,12 +691,12 @@
 
   // 2. 
   // map() har bir massiv elementida funksiyani bajarish orqali yangi massiv yaratadi
-  //   const numbers = [1, 2, 3, 4, 5];
-  //    function myfunction(value){
-  //     return value * 2
-  //    }
-  //    const number = numbers.map(myfunction)
-  //    console.log(number)
+    // const numbers = [1, 2, 3, 4, 5];
+    //  function myfunction(value){
+    //   return value + 2
+    //  }
+    //  const number = numbers.map(myfunction)
+    //  console.log(number)
 
   // 3. 
   //  flatMap() usuli ES2019 yilda qo'shilgan bu usul birinchi massivning barcha elementlarini xaritalaydi
@@ -716,14 +716,15 @@
 // 5. 
 //   reduce() usuli har bir massiv elementida bitta qiymat ishlab chiqarish(uni kamaytirish)
 //     uchun funksiyani ishga tushiradi
-  //   const numbers = [45, 4, 9, 16, 25];
-  //   let sum = numbers.reduce(myFunction);
-    
-  //   "The sum is " + sum;document.getElementById("one").innerHTML =
-    
-  //   function myFunction(total, value) {
-  //     return total + value;
-  //   }
+// const numbers = [45, 4, 9, 16, 25];
+// let sum = numbers.reduce(myFunction);
+
+// document.getElementById("one").innerHTML = "The sum is " + sum;
+
+// function myFunction(total, value) {
+//   return total + value;
+// }
+  
 
   // 6. 
   // Array.from() uzunligi xususiyatiga ega har qanday obyektdan yoki har qanday takrorlanadigan obyektdan Array obyektini qaytaradi
