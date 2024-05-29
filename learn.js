@@ -912,7 +912,100 @@ trunc(x) Raqamning butun qismini qaytaradi (x)
 // Taqqoslash operatorlari qiymatlarni solishtirish va natijaga qarab harakat qilish uchun shartli iboralarda ishlatilishi mumkin:
 
 
+              // shart bayonotlar ( if va else)
 
+// Ko'pincha kod yozganingizda, siz turli xil qarorlar uchun turli xil amallarni bajarishni xohlashingiz
+// Buni amalga oshirish uchun kodingizda shartli iboralardan foydalanishingiz mumkin.
+
+// if   -  Belgilangan shart rost bo'lsa, bajariladigan kod blokini belgilash uchun foydalaning
+
+// else  -  Agar bir xil shart noto'g'ri bo'lsa, bajariladigan kod blokini belgilash uchun foydalaning
+
+// else if  -  Agar birinchi shart noto'g'ri bo'lsa, sinov uchun yangi shartni belgilash uchun foydalaning
+
+// switch  -  Bajariladigan ko'plab muqobil kod bloklarini belgilash uchun foydalaning
+
+// if (new Date().getHours() > 18) {
+//   document.getElementById("one").innerHTML = "Good day!";
+// }
+
+
+// bunda 18 dan kichik bo'lsa good day aks holda good evening chiqadi
+// const hour = new Date().getHours(); 
+// let greeting;
+
+// if (hour < 18) {
+//   greeting = "Good day";
+// } else {
+//   greeting = "Good evening";
+// }
+
+// document.getElementById("one").innerHTML = greeting;
+
+// const time = new Date().getHours(); 
+// let greeting;
+
+// if (time < 10) {
+//   greeting = "Good morning";
+// } else if ( time < 20){
+//   greeting = "Good day";
+// }else{
+//   greeting = 'Good evening'
+// }
+
+// document.getElementById("one").innerHTML = greeting;
+
+                // switch
+
+// sintaksis
+// switch(expression) {
+//   case x:
+//     // code block
+//     break;
+//   case y:
+//     // code block
+//     break;
+//   default:
+//     // code block
+// }
+
+// let day;
+// switch (new Date().getDay()) {
+//   case 0:
+//     day = "Sunday";
+//     break;
+//   case 1:
+//     day = "Monday";
+//     break;
+//   case 2:
+//     day = "Tuesday";
+//     break;
+//   case 3:
+//     day = "Wednesday";
+//     break;
+//   case 4:
+//     day = "Thursday";
+//     break;
+//   case 5:
+//     day = "Friday";
+//     break;
+//   case  6:
+//     day = "Saturday";
+// }
+// document.getElementById("one").innerHTML = "Today is " + day;
+
+// let text;
+// switch (new Date().getDay()) {
+//   case 6:
+//     text = "Today is Saturday";
+//     break;
+//   case 0:
+//     text = "Today is Sunday";
+//     break;
+//   default:
+//     text = "Looking forward to the Weekend";
+// }
+// document.getElementById("one").innerHTML = text;
 
 
 
