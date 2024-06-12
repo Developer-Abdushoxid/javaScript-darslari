@@ -370,3 +370,36 @@
 //   12
 // }
 // document.getElementById('one').innerHTML = (myFunction(n))
+
+// const findNumber = arr => arr.find(num => arr.indexOf(num));
+
+// const b = [1,1,1,0.55,1,1];
+// const Number = findUniqueNumber(a);
+// console.log(uniqueNumber);  // Natija: 0.55
+
+// const findNumber = arr => {
+//      const counts = arr.reduce((acc, num) => {
+//          acc[num] = (acc[num] || 0) + 1;
+//          return acc;
+//      }, {});
+     
+//      return arr.find(num => counts[num] === 1);
+//  }
+ 
+//  const a = [1, 1,1,2, 1, 1];
+//  const Number = findNumber(a);
+//  console.log(Number);  // Natija: 2
+
+const calculateFactorial = n => {
+     let product = 1;
+     for (let i = 1; i <= n; i++) {
+         product *= i;
+     }
+     return product;
+ }
+ 
+ const n = prompt('istalgan son kiriting');  // Bu yerda tashqaridan kiritiladigan son
+ const result = calculateFactorial(n);
+ console.log(result);  // Natija: 120
+ 
+ 
