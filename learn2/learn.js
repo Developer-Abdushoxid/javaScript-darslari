@@ -100,3 +100,40 @@
         // let word = 'SaLoM'
         // let result = toggleCase(word);
         // console.log(result)
+
+        // HAR BIR MASSIVNI QATORLARIDA ALOHIDA CHIQARISH
+        // const a = [[1, 2, 1, 24], [8, 11, 9, 4], [7, 0, 7, 27], [7, 4, 28, 14], [3, 10, 26, 7],[2,5,8,7]];
+
+        // for (let i in a){
+        //     console.log("row" + i)
+
+        // for(let n in a[i]){
+        //     console.log(" " + a[i][n])
+        // }
+        // }
+
+        // SONLI VEKTOR KVADRATLARI YIG'INDISINI ANIQLOVCHI DASTUR
+        // function sumSquares(arr) {
+        //     let sum = 0;
+
+        //     for (let i = 0; i < arr.length; i++){
+        //         sum += arr[i] * arr[i]
+        //     }
+
+        //     return sum
+        // }
+        // let result = sumSquares([1,2,3,4]);
+        // console.log(result)
+
+        // const cars = ['lacetti', 'tico', 'damas', 'nexia']
+        // let result = cars.includes('tico') 
+        // console.log(result)
+
+        // KIRITILGAN RAQAMDAN KATTA RAQAMNI TOPISH FUNKSIYASI
+        const number = [12,34,22,1,4,56,7]
+
+        function myFunction(value) {
+            return value > 9
+        }
+        let result = number.find(myFunction)
+        console.log(result)
