@@ -130,10 +130,62 @@
         // console.log(result)
 
         // KIRITILGAN RAQAMDAN KATTA RAQAMNI TOPISH FUNKSIYASI
-        const number = [12,34,22,1,4,56,7]
+        // const number = [12,34,22,1,4,56,7]
 
-        function myFunction(value) {
-            return value > 9
-        }
-        let result = number.find(myFunction)
-        console.log(result)
+        // function myFunction(value) {
+        //     return value > 9
+        // }
+        // let result = number.find(myFunction)
+        // console.log(result)
+
+        // const arr1 = [ -3, 8, 7, 6, -5, 4, 3, 2, 1 ];
+
+// Massivni  o'sish bo'yicha saralash
+//     arr1.sort(function(a, b) {
+//     return a - b;
+//   });
+
+//     // Natijani chiqarish
+//     console.log(arr1);
+
+// massivni kamayish bo'yicha saralash
+// arr1.sort(function(a, b) {
+//     return b - a;
+//   });
+
+//     // Natijani chiqarish
+//     console.log(arr1);
+
+// ARRAY ICHIDAN ENG KICHIK ELEMENTNI TOPISH
+//  function myFunction(arr){
+//     return Math.min(...arr)
+//  }
+  
+//  let result = myFunction(arr1)
+
+//  console.log(result)
+
+// ARRAY ICHIDAN ENG KATTA ELEMENTNI TOPISH
+//  function myFunction(arr){
+//     return Math.max(...arr)
+//  }
+//  let result = myFunction(arr1)
+//  console.log(result)
+
+// forEach HAQIDA MA'LUMOT
+// har bir massiv uchun  bir marta funksiya chaqiradi
+// const arr1 = [ 3, 8, 7, 6 ];
+
+// arr1.forEach(function(element){
+//     console.log(element * 2 )
+// })
+
+// JAMI QIYMATNI HISOBLASH
+// const numbers = [45, 4, 9, 16, 25];
+
+// function myFunction(total, value) {
+//   return total + value;
+// }
+// let sum = arr1.reduce(myFunction);
+
+// console.log(sum)
