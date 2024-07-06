@@ -180,12 +180,148 @@
 //     console.log(element * 2 )
 // })
 
-// JAMI QIYMATNI HISOBLASH
+// BUTUN SONLAR MASSIVNING YIG'INDISI VA KO'PAYTMASINI HISOBLASH UCHUN JAVA SCRIPT DASTURI:
 // const numbers = [45, 4, 9, 16, 25];
 
 // function myFunction(total, value) {
-//   return total + value;
+//   // return total + value;
+//   return total * value;
 // }
-// let sum = arr1.reduce(myFunction);
+// let sum = numbers.reduce(myFunction);
 
 // console.log(sum)
+
+// BUTUN SONLAR MASSIVNING YIG'INDISI VA KO'PAYTMASINI HISOBLASH UCHUN JAVA SCRIPT DASTURI:
+
+//  const numbers = [45, 4, 9, 16, 25];
+// let s = 0;
+// let k = 1;
+// let i;
+//  for (i = 0; i < numbers.length; i+= 1){
+//   s += numbers[i] //yig'indisi
+//   k *= numbers[i] // ko'paytmasi
+//  }
+//  console.log(`Sum : ${s} Product : ${k}`)
+
+// BIR XIL RAQAMLARNI ANIQLAB OLIB TASHLAYDIGAN DASTUR
+
+// function remove(arr) {
+// return  [...new Set(arr)]
+// }
+// const numbers = [1,1,2,3,3,3,5,5,6,7];
+// const n = remove(numbers)
+// console.log(n)
+
+// BIR XIL SATRLARNI ANIQLAB OLIB TASHLAYDIGAN DASTUR:
+// function remove(arr) {
+//   const seen = new Set();
+//   const result = [];
+
+// arr.forEach(item => {
+//   const lower = item.toLowerCase();
+//   if(!seen.has(lower)){
+//     seen.add(lower)
+//     result.push(item)
+//   }
+// });
+// return result;
+// }
+// const original = ['apple','apple','orange','orange']
+// const unique = remove(original);
+// console.log(unique)
+
+// . Bizda quyidagi massivlar mavjud:
+// rang = ["Moviy", "Yashil", "Qizil", "Apelsin", "Binafsha", "Indigo", "Sariq"];
+// o = ["th","st","nd","rd"]
+// Ranglarni quyidagi tarzda aks ettirish uchun JavaScript dasturini yozing:
+// "Birinchi tanlov Moviy rang ."
+// "Ikkinchi tanlov yashil rang."
+// "Uchinchi tanlov - Qizil."
+
+// const colors = ['Moviy', "Yashil", "Qizil", "Apelsin", "Binafsha", "Indigo", "Sariq"];
+// colors.forEach((color, index) => {
+//   const position = index + 1;
+//   let output;
+//   switch(position) {
+//     case 1:
+//       output = `1 tanlov ${color} rang`;
+//       break;
+//       case 2:
+//       output = `2 tanlov ${color} rang`;
+//       break;
+//       default:
+//         output = `${position} th tanlov ${color} rang`
+//   }
+//   console.log(output)
+// });
+
+// KABISA YILLARNI ANIQLOVCHI DASTUR:
+// function findYears(start, end) {
+//   const result = [];
+
+//   for (let year = start; year <= end; year++){
+//     if((year % 4 === 0 && year % 100 !== 0)){
+//       result.push(year)
+//     }
+//   }
+//   return result;
+// }
+// const start = 2000;
+// const end = 2024;
+// const result = findYears(start, end);
+// console.log(result);
+
+// Massivni aralashtirish uchun JavaScript dasturi:
+// function shuffle(arr) {
+//   for (let i = arr.length - 1; i > 0; i--){
+//     const n = Math.floor(Math.random() * (i + 1));
+//     [arr[i], arr[n]] = [arr[n],arr[i]];
+//   }
+//   return arr;
+// }
+
+// const original = [1,2,3,4,5,6,7,8,9];
+// const shuffled = shuffle(original);
+// console.log(shuffled)
+
+// Individual qiymatlarga ega ikkita massiv mavjud. Berilgan massivdagi har bir alohida indeks qiymatining yig‘indisini hisoblash uchun JavaScript dasturini yozing.
+// const array1 = [1,2,3,4]
+// const array2 = [4,5,6,7]
+
+// function num (arr1, arr2){
+//   const max = Math.max(arr1.length, arr2.length);
+//   const result= [];
+
+//   for (let i = 0; i < max; i ++){
+//     const value1 = arr1[i] !== undefined ? arr1[i] : 0;
+//     const value2 = arr2[i] !== undefined ? arr2[i] : 0;
+//     result.push(value1 + value2)
+//   }
+//   return result
+// }
+// const result2 = num(array1, array2);
+// console.log(result2)
+
+// JavaScript massivida takroriy qiymatlarni topish uchun JavaScript dasturini yozing.
+const array = [1, 2, 3, 4, 5, 3, 2, 6, 7, 8, 6, 9];
+
+function find(arr) {
+  const seen = new Set();
+  const duplicates = [];
+  for (let value of arr){
+    if (seen.has(value)){
+      if(!duplicates.includes(value)){
+        duplicates.push(value)
+      }
+    } else {
+      seen.add(value)
+    }
+  }
+  return duplicates
+}
+const result = find(array);
+console.log(result);
+
+
+
+
