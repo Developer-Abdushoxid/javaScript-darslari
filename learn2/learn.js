@@ -303,25 +303,139 @@
 // console.log(result2)
 
 // JavaScript massivida takroriy qiymatlarni topish uchun JavaScript dasturini yozing.
-const array = [1, 2, 3, 4, 5, 3, 2, 6, 7, 8, 6, 9];
+// const array = [1, 2, 3, 4, 5, 3, 2, 6, 7, 8, 6, 9];
 
-function find(arr) {
-  const seen = new Set();
-  const duplicates = [];
-  for (let value of arr){
-    if (seen.has(value)){
-      if(!duplicates.includes(value)){
-        duplicates.push(value)
-      }
-    } else {
-      seen.add(value)
-    }
-  }
-  return duplicates
-}
-const result = find(array);
-console.log(result);
+// function find(arr) {
+//   const seen = new Set();
+//   const duplicates = [];
+
+//   for (let value of arr){
+//     if (seen.has(value)){
+//       if(!duplicates.includes(value)){
+//         duplicates.push(value)
+//       }
+//     } else {
+//       seen.add(value)
+//     }
+//   }
+//   return duplicates
+// }
+// const result = find(array);
+// console.log(result);
 
 
 
 
+//  const numbers = [45, 4, 9, 16, 25];
+// let s = 0;
+// let k = 1;
+// let i;
+//  for (i = 0; i < numbers.length; i+= 1){
+//   s += numbers[i] //yig'indisi
+//   k *= numbers[i] // ko'paytmasi
+//  }
+//  console.log(`Sum : ${s} Product : ${k}`)
+
+
+// BERILGAN ARRAY ELEMENTLAR YIG'INDISINI ANIQLASH:
+// const numbers = [1,2,3,4,5,6,7]
+// let total = 0;
+// let i;
+// for(i = 0; i < numbers.length; i += 1){
+//   total += numbers[i]
+// }
+// console.log(`Jami yig'indi ${total}`)
+
+
+// ELEMENTLARNI IKKIGA KO'PAYTIUVCHI DASTUR
+// const numbers = [1,2,3,4,5,6,7]
+// numbers.forEach(function(element){
+//   console.log(element * 2)
+// })
+
+
+// JUFT SONLARNI ANIQLASH
+
+// const numbers = [1,2,3,4,5,6,7]
+
+// numbers.forEach(number => {
+//   if(number % 2 === 0){
+//     console.log(`${number} - bu juft son`)
+//   }else{
+//     console.log(`${number} - bu toq son`)
+//   }
+// });
+
+// ARRAYLARNI TESKARIGA O'GIRISH:
+
+//  const numbers = [1,2,3,4,5,6,7]
+//  function reverseArray(item) {
+//   return item.reverse();
+//  }
+//  const result = reverseArray(numbers)
+//  console.log(result)
+
+// 2-yo'l
+// function reverseArray(item){
+//   let reversedNumbers = [];
+//   for(let i = item.length - 1; i >= 0; i--){
+//     reversedNumbers.push(item[i])
+//   }
+//   return reversedNumbers
+// }
+// const result = reverseArray(numbers)
+//  console.log(result)
+
+
+// ARRAY ELEMENTLARINING O'RTADAGISI TOPING
+// const numbers = [1,2,3,4,5,6,7]
+// const calculateNumber = array => array.reduce((a, b) => a + b, 0) / array.length;
+// const result = calculateNumber(numbers)
+//  console.log(result)
+
+
+// ELEMENTLARNI TARTIBLASH
+// const numbers = [1,6,3,7,5,2,4]
+// function sorted(arr){
+//  return arr.sort()
+// }
+// const result = sorted(numbers)
+// console.log(result)
+
+
+// ELEMENTLARNI ENG KATTA QIYMATINI TOPISH
+// const numbers = [1,6,3,7,5,2,4]
+// function maxNumber(arr){
+//  return Math.max(...arr)
+// }
+// const result = maxNumber(numbers)
+// console.log(result);
+
+// ELEMENTLARNI ENG KICHIK QIYMATINI TOPISH
+// const numbers = [1,6,3,7,5,2,4]
+// function maxNumber(arr){
+//  return Math.min(...arr)
+// }
+// const result = maxNumber(numbers)
+// console.log(result);
+
+// TAKRORLANGAN ELEMENTLARNI OLIB TASHLASH:
+// const numbers = [1, 2, 2, 3, 4, 4, 5];
+// function remove (item) {
+//   return [...new Set(item)]
+// };
+// const result = remove(numbers)
+// console.log(result);
+
+// BIR NECHTA ELEMENTLARNI BIRLASHTIRISH :
+// const array1 = [1, 2, 3];
+// const array2 = [4, 5, 6];
+// function arrays (arr1, arr2){
+//   return arr1.concat(arr2)
+// }
+
+// const result = arrays(array1, array2)
+// console.log(result)
+
+
+ 
