@@ -388,8 +388,11 @@
 
 
 // ARRAY ELEMENTLARINING O'RTADAGISI TOPING
-// const numbers = [1,2,3,4,5,6,7]
-// const calculateNumber = array => array.reduce((a, b) => a + b, 0) / array.length;
+// const numbers = [1,2,3,4,5,6,7,8]
+// function calculateNumber(array){
+//   return  array.reduce((a,b) => a + b, 0) / array.length;
+// }
+
 // const result = calculateNumber(numbers)
 //  console.log(result)
 
@@ -427,15 +430,14 @@
 // const result = remove(numbers)
 // console.log(result);
 
+
 // BIR NECHTA ELEMENTLARNI BIRLASHTIRISH :
 // const array1 = [1, 2, 3];
 // const array2 = [4, 5, 6];
 // function arrays (arr1, arr2){
 //   return arr1.concat(arr2)
 // }
-
 // const result = arrays(array1, array2)
 // console.log(result)
-
 
  
