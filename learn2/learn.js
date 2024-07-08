@@ -354,6 +354,7 @@
 // })
 
 
+
 // JUFT SONLARNI ANIQLASH
 
 // const numbers = [1,2,3,4,5,6,7]
@@ -365,6 +366,7 @@
 //     console.log(`${number} - bu toq son`)
 //   }
 // });
+
 
 // ARRAYLARNI TESKARIGA O'GIRISH:
 
@@ -407,12 +409,14 @@
 
 
 // ELEMENTLARNI ENG KATTA QIYMATINI TOPISH
-// const numbers = [1,6,3,7,5,2,4]
+// const number = [1,6,3,7,5,2,4]
+
 // function maxNumber(arr){
 //  return Math.max(...arr)
 // }
-// const result = maxNumber(numbers)
+// const result = maxNumber(number)
 // console.log(result);
+
 
 // ELEMENTLARNI ENG KICHIK QIYMATINI TOPISH
 // const numbers = [1,6,3,7,5,2,4]
@@ -439,5 +443,21 @@
 // }
 // const result = arrays(array1, array2)
 // console.log(result)
+
+// ARRAY ELEMENTLARIDA MA'LUM ELEMENTLARNI BOR YO'QLIGINI ANIQLASH:
+// const car = ['lacetti', 'gentra', 'tico']
+// function searchElement (item1, item2) {
+//   for( let i = 0; i < item1.length; i++){
+//     if( item1[i] === item2){
+//       return 'bu element bor'
+//     }
+//   }
+//   return 'bu element yo`q'
+// }
+// console.log(searchElement(car,'captiva'))
+
+
+
+
 
  
