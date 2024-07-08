@@ -138,15 +138,15 @@
         // let result = number.find(myFunction)
         // console.log(result)
 
-        // const arr1 = [ -3, 8, 7, 6, -5, 4, 3, 2, 1 ];
+        //  const arr1 = [ -3, 8, 7, 6, -5, 4, 3, 2, 1 ];
 
 // Massivni  o'sish bo'yicha saralash
-//     arr1.sort(function(a, b) {
-//     return a - b;
-//   });
+  //   arr1.sort(function(a, b) {
+  //   return a - b;
+  // });
 
-//     // Natijani chiqarish
-//     console.log(arr1);
+    // Natijani chiqarish
+    // console.log(arr1);
 
 // massivni kamayish bo'yicha saralash
 // arr1.sort(function(a, b) {
@@ -154,7 +154,7 @@
 //   });
 
 //     // Natijani chiqarish
-//     console.log(arr1);
+    // console.log(arr1);
 
 // ARRAY ICHIDAN ENG KICHIK ELEMENTNI TOPISH
 //  function myFunction(arr){
@@ -355,17 +355,6 @@
 
 
 
-// JUFT SONLARNI ANIQLASH
-
-// const numbers = [1,2,3,4,5,6,7]
-
-// numbers.forEach(number => {
-//   if(number % 2 === 0){
-//     console.log(`${number} - bu juft son`)
-//   }else{
-//     console.log(`${number} - bu toq son`)
-//   }
-// });
 
 
 // ARRAYLARNI TESKARIGA O'GIRISH:
@@ -449,12 +438,65 @@
 // function searchElement (item1, item2) {
 //   for( let i = 0; i < item1.length; i++){
 //     if( item1[i] === item2){
-//       return 'bu element bor'
+//       return true
 //     }
 //   }
-//   return 'bu element yo`q'
+//   return false
 // }
 // console.log(searchElement(car,'captiva'))
+
+
+// ARRAYDAGI BARCHA ELEMENTLARNI KATTA HARFLAR BILAN YOZISH:
+// const  cities =  ['toshkent', 'samarqand', 'namangan'];
+// function upper(item){
+//   let city = [];
+//   for(let i = 0; i < item.length; i++){
+//     city.push(item[i].toUpperCase())
+//   }
+//   return city
+// }
+// console.log(upper(cities))
+
+
+// ARRAYDAGI HAMMA ELEMENTLARGA QO'SHISH:
+const num = [1,2,4,3,6,5];
+// function incArray(arr, arr2){
+//   let incremented = [];
+//   for(let i = 0; i < arr.length; i++){
+//     incremented.push(arr[i] + arr2)
+//   }
+//   return incremented
+// }
+// console.log(incArray(num,2))
+
+// 2 - YO'L
+// num.forEach(function(element){
+//   console.log(element + 2)
+// })
+
+// JUFT SONLARNI TOPISH
+// function filterNumber(item){
+//   let evenNumber = [];
+//   for(let i = 0; i < item.length; i++){
+//     if(item[i] % 2 !== 0){
+//       evenNumber.push(item[i])
+//     }
+//   }
+//   return evenNumber
+// }
+// console.log(filterNumber(num))
+
+// 2-YO'L
+// const numbers = [1,2,3,4,5,6,7]
+// numbers.forEach(number => {
+//   if(number % 2 === 0){
+//     console.log(`${number} - bu juft son`)
+//   }else{
+//     console.log(`${number} - bu toq son`)
+//   }
+// });
+
+
 
 
 
