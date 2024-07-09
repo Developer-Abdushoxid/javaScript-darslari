@@ -459,7 +459,7 @@
 
 
 // ARRAYDAGI HAMMA ELEMENTLARGA QO'SHISH:
-const num = [1,2,4,3,6,5];
+// const num = [1,2,4,3,6,5];
 // function incArray(arr, arr2){
 //   let incremented = [];
 //   for(let i = 0; i < arr.length; i++){
@@ -497,9 +497,58 @@ const num = [1,2,4,3,6,5];
 // });
 
 
+// ARRAY ELEMENTLAR BERILGAN ULARNING ORASIDAN JUFT SONLARNI TOPIB SARALAB BERISH:
+// const number = [1,2,3,4,5,6,7,8,9,11];
 
+// function getSort(item) {
+//   const evenNumber = item.filter(num => num % 2 === 0)
+//   evenNumber.sort((a,b) => a - b)
+//   return evenNumber;
+// }
+// const result = getSort(number)
+// console.log(result)
 
+// RAQAMLAR BERILGAN ULARDAN IJOBIYSINING YIG'INDISINI ANIQLASH:
+// const number = [1,-4,7,12]
+// function positionSum(arr){
+//   return arr.reduce((sum,num) => {
+//     return num > 0 ? sum + num : sum;
+//   },0)
+// }
 
+// console.log(positionSum(number))
 
+// REACT JSDA KOMPONENTLAR IKKI TURGA BO'LINADI
+// SINF KOMPONENTLAR VA FUNCTION KOMPONENTLAR:
 
- 
+// SINF KOMPONENTLAR
+// class Car {
+//   constructor(name){
+//     this.brand = name
+//   }
+// }
+
+// const myCar = new Car('Ford')
+// console.log(myCar.brand)
+
+// FUNCTION KOMPONETLAR
+// function Car(){
+//   return <h1> I am a CAR!</h1>
+// }
+
+// SPREAD OPERATORGA MISOL:
+// const myVehicle = {
+//   brand: 'Ford',
+//   model: 'Mustang',
+//   color: 'red'
+// }
+
+// const updateMyVehicle = {
+//   type: 'car',
+//   year: 2021, 
+//   color: 'yellow'
+// }
+
+// const myUpdatedVehicle = {...myVehicle, ...updateMyVehicle}
+
+// console.log(myUpdatedVehicle)
