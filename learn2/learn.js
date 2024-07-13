@@ -475,10 +475,12 @@
 // })
 
 // JUFT SONLARNI TOPISH
+
+// const num = [1,2,3,4,5,6,7]
 // function filterNumber(item){
 //   let evenNumber = [];
 //   for(let i = 0; i < item.length; i++){
-//     if(item[i] % 2 !== 0){
+//     if(item[i] % 2 === 0){
 //       evenNumber.push(item[i])
 //     }
 //   }
@@ -518,6 +520,7 @@
 
 // console.log(positionSum(number))
 
+
 // REACT JSDA KOMPONENTLAR IKKI TURGA BO'LINADI
 // SINF KOMPONENTLAR VA FUNCTION KOMPONENTLAR:
 
@@ -533,8 +536,9 @@
 
 // FUNCTION KOMPONETLAR
 // function Car(){
-//   return <h1> I am a CAR!</h1>
+//   return  'I am a CAR!'
 // }
+// console.log(Car())
 
 // SPREAD OPERATORGA MISOL:
 // const myVehicle = {
@@ -552,3 +556,71 @@
 // const myUpdatedVehicle = {...myVehicle, ...updateMyVehicle}
 
 // console.log(myUpdatedVehicle)
+
+// ARRAYLARDA RAQAM MUSBAT BO'LSA SALBIY QILUVCHI FUNKSIYA
+// let number = [1,2,3,-5,-1]
+// function negative(numbers){
+//   return  numbers.map(num => Math.abs(num) * -1)
+// }
+// console.log(negative(number))
+
+
+// Berilgan massivdan ma'lum bir qiymatni o'chiruvchi funksiyani yozing.
+// const numbers = [1,2,3]
+// const removeNumber = 2;
+
+// function myFunction(item, value){
+//   return item.filter(arr => arr !== value)
+// }
+// console.log(myFunction(numbers,removeNumber))
+
+
+// Berilgan massivning oxiriga yangi element qo'shuvchi funksiyani yozing.
+// const fruits = ['banana', 'qovun'];
+// const newFruit = 'tarvuz'
+
+// function myFunction(item,array){
+//  item.push(array)
+// return item
+// }
+// console.log(myFunction(fruits,newFruit))
+
+// Berilgan massivdan berilgan qiymatning indeksini qaytaruvchi funksiyani yozing. Agar mavjud bo'lmasa, -1 qaytaring.4
+//  const fruits = ['banana', 'qovun'];
+
+// function myFunction(item,item2){
+//   return item.indexOf(item2)
+// }
+// console.log(myFunction(fruits,'banana'))
+
+// Berilgan massivda manfiy sonlar mavjudligini tekshiruvchi funksiyani yozing.
+// const num = [1,23,4]
+// function myFunction(item,item2){
+//   return item.includes(item2)
+// }
+
+// console.log(myFunction(num,4))
+
+// Berilgan massiv elementlarini bir-biriga qo'shib bitta string qaytaruvchi funksiyani yozing.
+// const words = ['Hello', 'world', '!'];
+
+// function myFunction(item) {
+//   return item.join(' ')
+// }
+// console.log(myFunction(words))
+
+// Arraylarning jami yig'indisi topish
+// const numbers = [1, 2, 3, 4];
+// let result = 0;
+// let i;
+// for(i = 0; i < numbers.length; i +=1){
+//   result += numbers[i]
+// }
+// console.log(`jami: yig'indi: ${result}`)
+
+// Berilgan massivdagi barcha sonlarni ikki barobarga oshiruvchi funksiyani yozing.
+function myFunction(item){
+  return item.map(num => num * 2)
+}
+console.log(myFunction(numbers))
+
