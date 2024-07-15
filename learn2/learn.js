@@ -619,8 +619,78 @@
 // console.log(`jami: yig'indi: ${result}`)
 
 // Berilgan massivdagi barcha sonlarni ikki barobarga oshiruvchi funksiyani yozing.
-function myFunction(item){
-  return item.map(num => num * 2)
-}
-console.log(myFunction(numbers))
+// function myFunction(item){
+//   return item.map(num => num * 2)
+// }
+// console.log(myFunction(numbers))
+
+// Massivdan muayyan elementni olib tashlash uchun JavaScript funksiyasini yozing.
+// const num = [1,2,3,4,5]
+// function removeArray(arr1,arr2){
+//   let index = arr1.indexOf(arr2);
+//   if(index > -1){
+//     arr1.splice(index,1)
+//   }
+//   return arr1
+// }
+// console.log(removeArray(num,1))
+
+
+// Muayyan elementni o'z ichiga olgan massivni topish uchun JavaScript funksiyasini yozing.
+// function myFunction(arr, element) {
+//   for (var i = 0; i < arr.length; i++) {
+//       if (arr[i] === element) {
+//           return true;
+//       }
+//   }
+//   return false;
+// }
+// console.log(myFunction(num,2))
+
+// function myFunction(num) {
+//   if (num % 3 === 0 && num % 5 === 0) {
+//       return 'fizzbass';
+//   } else if (num % 3 === 0) {
+//       return 'fizz';
+//   } else if (num % 5 === 0) {
+//       return 'bass';
+//   } else {
+//       return false;
+//   }
+// }
+
+// for (let i = 1; i <= 15; i++) {
+//   console.log(i + ": " + myFunction(i));
+// }
+
+const Money = 35000;
+const Price = 1600;
+function myFunction(Money, Price){
+  let count = 0;
+  do{
+    Money -= Price;
+    count ++
+  }while
+    (Money >= Price);
+    return{
+      count,
+      Money
+    }
+  }
+  const result = myFunction(Money, Price);
+  console.log(`Siz ${result.count} ta mashina sotib olasiz va ${result.Money} ming so'm pul ortib qoladi.`)
+
+
+// const numbers = [1, 2, 3];
+// let i = 4;
+
+// do {
+//     numbers.push(i);
+//     i++;
+// } while (i <= 9);
+
+// console.log(numbers);
+
+
+
 
