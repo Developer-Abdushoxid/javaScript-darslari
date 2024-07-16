@@ -663,24 +663,19 @@
 //   console.log(i + ": " + myFunction(i));
 // }
 
-const Money = 35000;
-const Price = 1600;
-function myFunction(Money, Price){
-  let count = 0;
-  do{
-    Money -= Price;
-    count ++
-  }while
-    (Money >= Price);
-    return{
-      count,
-      Money
-    }
-  }
-  const result = myFunction(Money, Price);
-  console.log(`Siz ${result.count} ta mashina sotib olasiz va ${result.Money} ming so'm pul ortib qoladi.`)
 
-
+// const money = 32000;
+// const price = 5000;
+// function myFunction(money, price){
+//   let count = 0
+//   do{
+//     money -= price
+//     count ++
+//   }while(money >= price)
+//     return {count, money}
+// }
+// const result = myFunction(money, price);
+// console.log(`Siz ${result.count} ta moshina sotib olasiz va ${result.money} ming so'm pul ortib qoladi`)
 // const numbers = [1, 2, 3];
 // let i = 4;
 
@@ -691,6 +686,66 @@ function myFunction(Money, Price){
 
 // console.log(numbers);
 
+// let sum = 0;
+// let i = 1;
+// do{
+//   sum += i
+//   i++
+// }while(i <= 10);
+// console.log(`yig'indi: ${sum}`)
 
 
+// PAROL TO'G'RI KITILMAGUNCHA ISHLAYDI
+// let correctPassword = "12345";
+// let userPassword;
+// do {
+//     userPassword = prompt("Parolni kiriting:");
+// } while (userPassword !== correctPassword);
+// console.log("Parol to'g'ri kiritildi!");
 
+// function calculate(initialAmount, monthlyRate, months) {
+//   let currentAmount = initialAmount;
+//   let month = 1;
+//   do {
+//       currentAmount += currentAmount * monthlyRate / 100;
+//       console.log(`Oy ${month}: ${currentAmount.toFixed(2)} so'm`);
+//       month++;
+//   } while (month <= months);
+//   return currentAmount.toFixed(2);
+// }
+
+// let initialAmount = parseFloat(prompt("Boshlang'ich omonat summasini kiriting:"));
+// let monthlyRate = parseFloat(prompt("Oylik foiz stavkasini kiriting:"));
+// let months = parseInt(prompt("Omonat muddatini oylarda kiriting:"));
+
+// let finalAmount = calculate(initialAmount, monthlyRate, months);
+// console.log(`Foizlar qo'shilgandan keyingi jami summa: ${finalAmount} so'm`);
+
+// let rows = 5;
+// let pattern = '';
+// let i = 0;
+
+// while (i < rows) {
+//     pattern += '1';
+//     console.log(pattern);
+//     i++;
+// }
+
+
+// function calculateTime(speed, distance) {
+//   const time = distance / speed;
+//   return time;
+// }
+// const speed = 60; // km/soat
+// const distance = 60; // km
+// const travelTime = calculateTime(speed, distance);
+// console.log(`Siz ${speed} km/soat tezlikda ${distance} km masofani ${travelTime.toFixed(2)} soatda bosib o'tasiz.`);
+
+function myFunction (speed, distance){
+  const time = distance / speed
+  return time
+}
+const speed = 60;
+const distance = 100;
+const travelTime = myFunction(speed,distance);
+console.log(`siz ${speed} km/soatda tezlikda ${distance} km masofani ${travelTime.toFixed(2)} soatda bosib o'tasiz`)
