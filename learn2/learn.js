@@ -741,11 +741,178 @@
 // const travelTime = calculateTime(speed, distance);
 // console.log(`Siz ${speed} km/soat tezlikda ${distance} km masofani ${travelTime.toFixed(2)} soatda bosib o'tasiz.`);
 
-function myFunction (speed, distance){
-  const time = distance / speed
-  return time
-}
-const speed = 60;
-const distance = 100;
-const travelTime = myFunction(speed,distance);
-console.log(`siz ${speed} km/soatda tezlikda ${distance} km masofani ${travelTime.toFixed(2)} soatda bosib o'tasiz`)
+
+
+        //  DO WHILE BO'YICHA
+
+// 10 tagacha chop etish
+// let num = 0;
+// do{
+//   console.log(num)
+//   num++
+// }while(num <= 10)
+
+
+// 20 gacha juft sonlarni chiqarish
+// let num = 0;
+// do{
+//   console.log(num)
+//   num += 2;
+// }while(num <= 20)
+
+  // factorial hisoblash
+//   const num = 5;
+//   function factorial(n){
+//     let result = 1
+//     let i = n;
+//     do{
+//       result *= i;
+//       i --;
+//     }while(i > 0)
+//       return result;
+//   }
+// console.log(`${num} = ${factorial(num)}`)
+
+// 1 dan 100 gacha bo'lgan sonlar yig'indisi
+// let sum = 0;
+// let result = 1;
+// do{
+//   sum += result;
+//   result ++;
+// }while(result <= 100);
+// console.log(`1 dan 100 gacha bo'lgan sonlar yig'indisi ${sum}`)
+
+
+// 10 ta fibonachi kodlarini chiqarish
+// let n1 = 0, n2 = 1, nextTerm;
+// let count = 1;
+
+// console.log("10 ta birinchi Fibonacci sonlari:");
+// console.log(n1); // Birinchi sonni chop etamiz
+// console.log(n2); // Ikkinchi sonni chop etamiz
+// do {
+//     nextTerm = n1 + n2;
+//     console.log(nextTerm);
+//     n1 = n2;
+//     n2 = nextTerm;
+//     count++;
+// } while (count < 9);
+
+// 10 gacha sonni kvadratini chiqarish
+// let number = 1;
+// do{
+//   console.log(`${number}, kvadrati${number * number}`)
+//   number ++
+// }while(number <= 10)
+
+// kiritilgan sonni o'rtacha qiymatini topish
+// let sum = 0;
+// let count = 0;
+// do {
+//     let number = parseFloat(prompt(`Iltimos, ${count + 1}-sonni kiriting: `));
+//     sum += number;
+//     count++;
+// } while (count < 5);
+// let average = sum / 5;
+// console.log(`Kiritilgan 5 ta sonning o'rtacha qiymati: ${average}`);
+
+// kiritilgan sonni eng kattasini topish
+// let max = null;
+// let count = 0
+// do{
+//   let number = parseFloat(prompt(`Iltimos, ${count + 1} - sonni kiriting`))
+//   if(number > max){
+//     max = number;
+//   }
+//   count++
+// }while(count < 5);
+// console.log(`kiritlgan 5 ta sonni eng kattasi: ${max}`)
+
+// kiritilgan sonni teskariga o'girish
+// let number = '1,3,4,5';
+// let reversedNumber = '';
+// let i = number.length - 1;
+// do {
+//     reversedNumber += number[i];
+//     i--;
+// } while (i >= 0);
+// console.log(`Kiritilgan sonning teskari tartibda qiymati: ${reversedNumber}`);
+
+// kiritilgan sonni yig'indisini hisoblash
+// let number = prompt('Iltimos, bir son kiriting: ');
+// let sum = 0;
+// let i = 0;
+// do {
+//     let digit = parseInt(number[i]);
+//     sum += digit;
+//     i++;
+// } while (i < number.length);
+// console.log(`Kiritilgan sonning raqamlarining yig'indisi: ${sum}`);
+
+// 10 gacha sonni ko'rsatish
+// for (let i = 1; i <= 10; i++) {
+//     console.log(i);
+// }
+
+// 20 gacha bo'lgan sonni juftlarini aniqlash
+// for (let i = 2; i <= 20; i += 2) {
+//   console.log(i);
+// }
+
+// sonlar yig'indisi (1 - 100 gacha)
+// let sum = 0;
+// for (let i = 1; i <= 100; i++) {
+//     sum += i;
+// }
+// console.log(sum)
+
+// sonlar kvadratini topish
+// for (let i = 1; i <= 10; i++) {
+//   console.log(`${i} ning kvadrati: ${i * i}`);
+// }
+
+//  5 sonni o'rtachasini topish
+// let sum = 0;
+// for (let i = 0; i < 5; i++) {
+//     let number = parseFloat(prompt(`Iltimos, ${i + 1}-sonni kiriting: `));
+//     sum += number;
+// }
+// let average = sum / 5;
+// console.log(`Kiritilgan 5 ta sonning o'rtacha qiymati: ${average}`);
+
+// 5 sonni eng kattasini topish
+// let max = 0;
+// for (let i = 0; i < 3; i++) {
+//     let number = parseFloat(prompt(`Iltimos, ${i + 1}-sonni kiriting: `));
+//     if (max === null || number > max) {
+//         max = number;
+//     }
+// }
+// console.log(`Kiritilgan 5 ta sonning eng kattasi: ${max}`);
+
+
+// raqamlarni teskariga o'girish
+// let number = prompt('Iltimos, bir nechta son kiriting: ');
+// let reversedNumber = '';
+// for (let i = number.length - 1; i >= 0; i--) {
+//     reversedNumber += number[i];
+// }
+// console.log(`Kiritilgan sonning teskari tartibda qiymati: ${reversedNumber}`);
+
+// foydalanuvchi kiritilgan sonni jami
+// let number = prompt('Iltimos, bir son kiriting: ');
+// let sum = 0;
+// for (let i = 0; i < number.length; i++) {
+//     let digit = parseInt(number[i]);
+//     sum += digit;
+// }
+// console.log(`Kiritilgan sonning raqamlarining yig'indisi: ${sum}`);
+
+
+
+
+
+
+
+
+
