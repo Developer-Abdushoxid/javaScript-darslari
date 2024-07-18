@@ -390,16 +390,17 @@
 //  const Number = findNumber(a);
 //  console.log(Number);  // Natija: 2
 
-const calculateFactorial = n => {
-     let product = 1;
-     for (let i = 1; i <= n; i++) {
-         product *= i;
-     }
-     return product;
- }
+// const calculateFactorial = n => {
+//      let product = 1;
+//      for (let i = 1; i <= n; i++) {
+//          product *= i;
+//      }
+//      return product;
+//  }
  
- const n = prompt('istalgan son kiriting');  // Bu yerda tashqaridan kiritiladigan son
- const result = calculateFactorial(n);
- console.log(result);  // Natija: 120
+//  const n = prompt('istalgan son kiriting');  // Bu yerda tashqaridan kiritiladigan son
+//  const result = calculateFactorial(n);
+//  console.log(result);  // Natija: 120
  
- 
+
+

@@ -880,7 +880,7 @@
 // let average = sum / 5;
 // console.log(`Kiritilgan 5 ta sonning o'rtacha qiymati: ${average}`);
 
-// 5 sonni eng kattasini topish
+// 5 ta sonni eng kattasini topish
 // let max = 0;
 // for (let i = 0; i < 3; i++) {
 //     let number = parseFloat(prompt(`Iltimos, ${i + 1}-sonni kiriting: `));
@@ -889,6 +889,15 @@
 //     }
 // }
 // console.log(`Kiritilgan 5 ta sonning eng kattasi: ${max}`);
+
+let max = 0;
+for(let i = 0; i < 3; i++){
+  let number = parseFloat(prompt(`Istalgan ${i} son kiriting`))
+  if( number > max){
+    max = number
+  }
+}
+console.log(`eng kattasi ${max}`)
 
 
 // raqamlarni teskariga o'girish
@@ -899,17 +908,23 @@
 // }
 // console.log(`Kiritilgan sonning teskari tartibda qiymati: ${reversedNumber}`);
 
-// foydalanuvchi kiritilgan sonni jami
-// let number = prompt('Iltimos, bir son kiriting: ');
-// let sum = 0;
-// for (let i = 0; i < number.length; i++) {
-//     let digit = parseInt(number[i]);
-//     sum += digit;
+
+// foydalanuvchi kiritilgan sonni jami yig'indisi:
+// let num = prompt('Istalgan sonlarni kiriting');
+// let result = 0;
+// for(let i = 0; i < num.length; i++){
+//   result += parseInt(num[i])
 // }
-// console.log(`Kiritilgan sonning raqamlarining yig'indisi: ${sum}`);
+// console.log(`yig'indi: ${result}`)
 
 
+// KIRITILGAN ISIMNI BOSHINI KATTA QILISH
+// function myFunction(name){
+//   return name.at(0).toUpperCase() + name.slice(1).toLowerCase()
+// }
 
+// const car = 'gentra'
+// console.log(myFunction(car))
 
 
 
