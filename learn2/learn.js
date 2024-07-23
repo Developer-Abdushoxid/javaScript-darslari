@@ -1,35 +1,33 @@
-
 // const first = (array, n) => {
 //     // Check if the input array is null, return undefined if true
 //     if (array == null)
 //       return undefined;
-  
+
 //     // Check if the value of n is null, return the first element of the array if true
 //     if (n == null)
 //       return array[0];
-  
+
 //     // Check if the value of n is negative, return an empty array if true
 //     if (n < 0)
 //       return [];
-  
+
 //     // Use the slice method to get the first n elements of the array
 //     return array.slice(0, n);
 //   };
-  
-  // Testing the function with constious cases
+
+// Testing the function with constious cases
 //   console.log(first([7]))
 
 // const last =  function(array, n) {
-//     if (array == null) 
+//     if (array == null)
 //       return void 0;
-//     if (n == null) 
+//     if (n == null)
 //        return array[array.length - 1];
-//     return array.slice(Math.max(array.length - n, 0));  
+//     return array.slice(Math.max(array.length - n, 0));
 //     };
-  
+
 //   console.log(last([7, 9, 0, -2],4));
 //   console.log(last([7, 9, 0, -2],3));
-
 
 //   const myColor = ["Red", "Green", "White", "Black"];
 //   console.log(myColor.toString());
@@ -39,7 +37,7 @@
 // const num = prompt();
 // const str = num.toString();
 // const result = [str[0]];
-  
+
 // for(let x = 1; x < str.length; x++)
 //   {
 //     if((str[x-1]%2 === 0)&&(str[x]%2 === 0))
@@ -53,13 +51,10 @@
 //   }
 // console.log(result.join(''));
 
-
-
-
 // const second = function(arr, x) {
-//     if (arr == null) 
+//     if (arr == null)
 //         return void 0;
-//         if(x == null) 
+//         if(x == null)
 //             return arr[0];
 //             if(x < 0)
 //                 return [];
@@ -70,83 +65,82 @@
 //         console.log(second(2))
 
 //  MASSIV NING OXIRGI QATORINI CHIQARISH
-        // const third = function(arr, b) {
-        //     if(arr == null)
-        //         return void 0;
-        //     if(b == null)
-        //         return arr[arr.length -1]
-        //     return arr.slice(arr.length - 1, 0)
-        // }
-        // console.log(third([1,2,6,3]))
-   
+// const third = function(arr, b) {
+//     if(arr == null)
+//         return void 0;
+//     if(b == null)
+//         return arr[arr.length -1]
+//     return arr.slice(arr.length - 1, 0)
+// }
+// console.log(third([1,2,6,3]))
 
-        // katta harflarni kichik , kichik harflarni katta qiladigan dastur:
+// katta harflarni kichik , kichik harflarni katta qiladigan dastur:
 
-        // function toggleCase(str) {
-        //     let result = '';
+// function toggleCase(str) {
+//     let result = '';
 
-        //     for (let i = 0; i < str.length; i++) {
-        //         let char = str[i];
+//     for (let i = 0; i < str.length; i++) {
+//         let char = str[i];
 
-        //         if (char === char.toUpperCase()){
-        //             result += char.toLowerCase();
-        //         }else {
-        //             result += char.toUpperCase();
-        //         }
-        //     }
-        //     return result;
-        // }
+//         if (char === char.toUpperCase()){
+//             result += char.toLowerCase();
+//         }else {
+//             result += char.toUpperCase();
+//         }
+//     }
+//     return result;
+// }
 
-        // let word = 'SaLoM'
-        // let result = toggleCase(word);
-        // console.log(result)
+// let word = 'SaLoM'
+// let result = toggleCase(word);
+// console.log(result)
 
-        // HAR BIR MASSIVNI QATORLARIDA ALOHIDA CHIQARISH
-        // const a = [[1, 2, 1, 24], [8, 11, 9, 4], [7, 0, 7, 27], [7, 4, 28, 14], [3, 10, 26, 7],[2,5,8,7]];
+// HAR BIR MASSIVNI QATORLARIDA ALOHIDA CHIQARISH
+// const a = [[1, 2, 1, 24], [8, 11, 9, 4], [7, 0, 7, 27], [7, 4, 28, 14], [3, 10, 26, 7],[2,5,8,7]];
 
-        // for (let i in a){
-        //     console.log("row" + i)
+// for (let i in a){
+//     console.log("row" + i)
 
-        // for(let n in a[i]){
-        //     console.log(" " + a[i][n])
-        // }
-        // }
+// for(let n in a[i]){
+//     console.log(" " + a[i][n])
+// }
+// }
 
-        // SONLI VEKTOR KVADRATLARI YIG'INDISINI ANIQLOVCHI DASTUR
-        // function sumSquares(arr) {
-        //     let sum = 0;
+// SONLI VEKTOR KVADRATLARI YIG'INDISINI ANIQLOVCHI DASTUR
+// function sumSquares(arr) {
+//     let sum = 0;
 
-        //     for (let i = 0; i < arr.length; i++){
-        //         sum += arr[i] * arr[i]
-        //     }
+//     for (let i = 0; i < arr.length; i++){
+//         sum += arr[i] * arr[i]
+//     }
 
-        //     return sum
-        // }
-        // let result = sumSquares([1,2,3,4]);
-        // console.log(result)
+//     return sum
+// }
+// let result = sumSquares([1,2,3,4]);
+// console.log(result)
 
-        // const cars = ['lacetti', 'tico', 'damas', 'nexia']
-        // let result = cars.includes('tico') 
-        // console.log(result)
+// const cars = ['lacetti', 'tico', 'damas', 'nexia']
+// let result = cars.includes('tico')
+// console.log(result)
 
-        // KIRITILGAN RAQAMDAN KATTA RAQAMNI TOPISH FUNKSIYASI
-        // const number = [12,34,22,1,4,56,7]
+// KIRITILGAN RAQAMDAN KATTA RAQAMNI TOPISH FUNKSIYASI
+// const number = [12,34,22,1,4,56,7]
 
-        // function myFunction(value) {
-        //     return value > 9
-        // }
-        // let result = number.find(myFunction)
-        // console.log(result)
+// function myFunction(value) {
+//     return value > 9
+// }
+// let result = number.find(myFunction)
+// console.log(result)
 
-        //  const arr1 = [ -3, 8, 7, 6, -5, 4, 3, 2, 1 ];
+//  const arr1 = [ -3, 8, 7, 6, -5, 4, 3, 2, 1 ];
 
 // Massivni  o'sish bo'yicha saralash
-  //   arr1.sort(function(a, b) {
-  //   return a - b;
-  // });
+//   arr1.sort(function(a, b) {
+//   return a - b;
+// });
 
-    // Natijani chiqarish
-    // console.log(arr1);
+// Natijani chiqarish
+// console.log(arr1);
 
 // massivni kamayish bo'yicha saralash
 // arr1.sort(function(a, b) {
@@ -154,13 +148,13 @@
 //   });
 
 //     // Natijani chiqarish
-    // console.log(arr1);
+// console.log(arr1);
 
 // ARRAY ICHIDAN ENG KICHIK ELEMENTNI TOPISH
 //  function myFunction(arr){
 //     return Math.min(...arr)
 //  }
-  
+
 //  let result = myFunction(arr1)
 
 //  console.log(result)
@@ -323,9 +317,6 @@
 // const result = find(array);
 // console.log(result);
 
-
-
-
 //  const numbers = [45, 4, 9, 16, 25];
 // let s = 0;
 // let k = 1;
@@ -336,7 +327,6 @@
 //  }
 //  console.log(`Sum : ${s} Product : ${k}`)
 
-
 // BERILGAN ARRAY ELEMENTLAR YIG'INDISINI ANIQLASH:
 // const numbers = [1,2,3,4,5,6,7]
 // let total = 0;
@@ -346,16 +336,11 @@
 // }
 // console.log(`Jami yig'indi ${total}`)
 
-
 // ELEMENTLARNI IKKIGA KO'PAYTIUVCHI DASTUR
 // const numbers = [1,2,3,4,5,6,7]
 // numbers.forEach(function(element){
 //   console.log(element * 2)
 // })
-
-
-
-
 
 // ARRAYLARNI TESKARIGA O'GIRISH:
 
@@ -377,7 +362,6 @@
 // const result = reverseArray(numbers)
 //  console.log(result)
 
-
 // ARRAY ELEMENTLARINING O'RTADAGISI TOPING
 // const numbers = [1,2,3,4,5,6,7,8]
 // function calculateNumber(array){
@@ -387,7 +371,6 @@
 // const result = calculateNumber(numbers)
 //  console.log(result)
 
-
 // ELEMENTLARNI TARTIBLASH
 // const numbers = [1,6,3,7,5,2,4]
 // function sorted(arr){
@@ -395,7 +378,6 @@
 // }
 // const result = sorted(numbers)
 // console.log(result)
-
 
 // ELEMENTLARNI ENG KATTA QIYMATINI TOPISH
 // const number = [1,6,3,7,5,2,4]
@@ -405,7 +387,6 @@
 // }
 // const result = maxNumber(number)
 // console.log(result);
-
 
 // ELEMENTLARNI ENG KICHIK QIYMATINI TOPISH
 // const numbers = [1,6,3,7,5,2,4]
@@ -422,7 +403,6 @@
 // };
 // const result = remove(numbers)
 // console.log(result);
-
 
 // BIR NECHTA ELEMENTLARNI BIRLASHTIRISH :
 // const array1 = [1, 2, 3];
@@ -445,7 +425,6 @@
 // }
 // console.log(searchElement(car,'captiva'))
 
-
 // ARRAYDAGI BARCHA ELEMENTLARNI KATTA HARFLAR BILAN YOZISH:
 // const  cities =  ['toshkent', 'samarqand', 'namangan'];
 // function upper(item){
@@ -456,7 +435,6 @@
 //   return city
 // }
 // console.log(upper(cities))
-
 
 // ARRAYDAGI HAMMA ELEMENTLARGA QO'SHISH:
 // const num = [1,2,4,3,6,5];
@@ -498,7 +476,6 @@
 //   }
 // });
 
-
 // ARRAY ELEMENTLAR BERILGAN ULARNING ORASIDAN JUFT SONLARNI TOPIB SARALAB BERISH:
 // const number = [1,2,3,4,5,6,7,8,9,11];
 
@@ -511,14 +488,12 @@
 // console.log(result)
 
 // RAQAMLAR BERILGAN ULARDAN IJOBIYSINING YIG'INDISINI ANIQLASH:
-// const number = [1,-4,7,12]
-// function positionSum(arr){
-//   return arr.reduce((sum,num) => {
-//     return num > 0 ? sum + num : sum;
-//   },0)
-// }
 
-// console.log(positionSum(number))
+// const number = [1, -4, -7, 12];
+// const positiveNumbers = number.filter(num => num > 0);
+// const result = positiveNumbers.reduce((acc, num) => acc + num,0)
+// console.log(`ijobiy raqamlar ${positiveNumbers} yig'indisi ${result}`)
+
 
 
 // REACT JSDA KOMPONENTLAR IKKI TURGA BO'LINADI
@@ -549,7 +524,7 @@
 
 // const updateMyVehicle = {
 //   type: 'car',
-//   year: 2021, 
+//   year: 2021,
 //   color: 'yellow'
 // }
 
@@ -564,7 +539,6 @@
 // }
 // console.log(negative(number))
 
-
 // Berilgan massivdan ma'lum bir qiymatni o'chiruvchi funksiyani yozing.
 // const numbers = [1,2,3]
 // const removeNumber = 2;
@@ -573,7 +547,6 @@
 //   return item.filter(arr => arr !== value)
 // }
 // console.log(myFunction(numbers,removeNumber))
-
 
 // Berilgan massivning oxiriga yangi element qo'shuvchi funksiyani yozing.
 // const fruits = ['banana', 'qovun'];
@@ -635,7 +608,6 @@
 // }
 // console.log(removeArray(num,1))
 
-
 // Muayyan elementni o'z ichiga olgan massivni topish uchun JavaScript funksiyasini yozing.
 // function myFunction(arr, element) {
 //   for (var i = 0; i < arr.length; i++) {
@@ -676,6 +648,21 @@
 // }
 // const result = myFunction(money, price);
 // console.log(`Siz ${result.count} ta moshina sotib olasiz va ${result.money} ming so'm pul ortib qoladi`)
+
+// const sum = 32000;
+// const price = 1700;
+// function myFunction(sum,price){
+//   let count = 0
+//   do{
+//     sum -= price
+//     count++
+//   }while(sum >= price)
+//     return {count,sum}
+// }
+
+// const carPrice = myFunction(sum, price)
+// console.log(`siz ${carPrice.count} ta mashina sotib olasiz ${carPrice.sum} pul ortib qoladi`)
+
 // const numbers = [1, 2, 3];
 // let i = 4;
 
@@ -693,7 +680,6 @@
 //   i++
 // }while(i <= 10);
 // console.log(`yig'indi: ${sum}`)
-
 
 // PAROL TO'G'RI KITILMAGUNCHA ISHLAYDI
 // let correctPassword = "12345";
@@ -731,7 +717,6 @@
 //     i++;
 // }
 
-
 // function calculateTime(speed, distance) {
 //   const time = distance / speed;
 //   return time;
@@ -741,9 +726,7 @@
 // const travelTime = calculateTime(speed, distance);
 // console.log(`Siz ${speed} km/soat tezlikda ${distance} km masofani ${travelTime.toFixed(2)} soatda bosib o'tasiz.`);
 
-
-
-        //  DO WHILE BO'YICHA
+//  DO WHILE BO'YICHA
 
 // 10 tagacha chop etish
 // let num = 0;
@@ -752,7 +735,6 @@
 //   num++
 // }while(num <= 10)
 
-
 // 20 gacha juft sonlarni chiqarish
 // let num = 0;
 // do{
@@ -760,7 +742,7 @@
 //   num += 2;
 // }while(num <= 20)
 
-  // factorial hisoblash
+// factorial hisoblash
 //   const num = 5;
 //   function factorial(n){
 //     let result = 1
@@ -781,7 +763,6 @@
 //   result ++;
 // }while(result <= 100);
 // console.log(`1 dan 100 gacha bo'lgan sonlar yig'indisi ${sum}`)
-
 
 // 10 ta fibonachi kodlarini chiqarish
 // let n1 = 0, n2 = 1, nextTerm;
@@ -817,16 +798,19 @@
 // console.log(`Kiritilgan 5 ta sonning o'rtacha qiymati: ${average}`);
 
 // kiritilgan sonni eng kattasini topish
-// let max = null;
-// let count = 0
-// do{
-//   let number = parseFloat(prompt(`Iltimos, ${count + 1} - sonni kiriting`))
-//   if(number > max){
+// let max = -Infinity; // Maksimal qiymatni aniq belgilash uchun
+// let count = 0;
+
+// do {
+//   let number = parseFloat(prompt(`Iltimos, ${count + 1}-sonni kiriting:`));
+//   if (!isNaN(number) && number > max) {
 //     max = number;
 //   }
-//   count++
-// }while(count < 5);
-// console.log(`kiritlgan 5 ta sonni eng kattasi: ${max}`)
+//   count++;
+// } while (count < 3);
+
+// console.log(`Kiritilgan 5 ta sonning eng kattasi: ${max}`);
+
 
 // kiritilgan sonni teskariga o'girish
 // let number = '1,3,4,5';
@@ -838,17 +822,25 @@
 // } while (i >= 0);
 // console.log(`Kiritilgan sonning teskari tartibda qiymati: ${reversedNumber}`);
 
+
 // kiritilgan sonni yig'indisini hisoblash
-// let number = prompt('Iltimos, bir son kiriting: ');
+
+// let number = "12356";
 // let sum = 0;
 // let i = 0;
 // do {
-//     let digit = parseInt(number[i]);
-//     sum += digit;
-//     i++;
+//   let digit = parseInt(number[i]);
+//   sum += digit;
+//   i++;
 // } while (i < number.length);
-// console.log(`Kiritilgan sonning raqamlarining yig'indisi: ${sum}`);
+// console.log(`jami yig'indi: ${sum}`);
 
+// function myFunction(numberstr) {
+//   return numberstr.replace(/\./g, "[.]");
+// }
+// const num = myFunction("1.2.3...4.5");
+
+// console.log(num);
 // 10 gacha sonni ko'rsatish
 // for (let i = 1; i <= 10; i++) {
 //     console.log(i);
@@ -859,6 +851,11 @@
 //   console.log(i);
 // }
 
+// 20 gacha bo'lgan sonni toqlarini aniqlash
+// for(let i = 1; i < 10; i+=2 ){
+//   console.log(i)
+// }
+
 // sonlar yig'indisi (1 - 100 gacha)
 // let sum = 0;
 // for (let i = 1; i <= 100; i++) {
@@ -867,20 +864,20 @@
 // console.log(sum)
 
 // sonlar kvadratini topish
-// for (let i = 1; i <= 10; i++) {
-//   console.log(`${i} ning kvadrati: ${i * i}`);
+// for( let i = 1; i < 5 ; i ++){
+//   console.log(`${i} ning kvadrati ${i * i}`)
 // }
 
-//  5 sonni o'rtachasini topish
+//  3 sonni o'rtachasini topish
 // let sum = 0;
-// for (let i = 0; i < 5; i++) {
+// for (let i = 0; i < 3; i++) {
 //     let number = parseFloat(prompt(`Iltimos, ${i + 1}-sonni kiriting: `));
 //     sum += number;
 // }
 // let average = sum / 5;
 // console.log(`Kiritilgan 5 ta sonning o'rtacha qiymati: ${average}`);
 
-// 5 ta sonni eng kattasini topish
+// 3 ta sonni eng kattasini topish
 // let max = 0;
 // for (let i = 0; i < 3; i++) {
 //     let number = parseFloat(prompt(`Iltimos, ${i + 1}-sonni kiriting: `));
@@ -890,16 +887,6 @@
 // }
 // console.log(`Kiritilgan 5 ta sonning eng kattasi: ${max}`);
 
-let max = 0;
-for(let i = 0; i < 3; i++){
-  let number = parseFloat(prompt(`Istalgan ${i} son kiriting`))
-  if( number > max){
-    max = number
-  }
-}
-console.log(`eng kattasi ${max}`)
-
-
 // raqamlarni teskariga o'girish
 // let number = prompt('Iltimos, bir nechta son kiriting: ');
 // let reversedNumber = '';
@@ -907,7 +894,6 @@ console.log(`eng kattasi ${max}`)
 //     reversedNumber += number[i];
 // }
 // console.log(`Kiritilgan sonning teskari tartibda qiymati: ${reversedNumber}`);
-
 
 // foydalanuvchi kiritilgan sonni jami yig'indisi:
 // let num = prompt('Istalgan sonlarni kiriting');
@@ -917,14 +903,65 @@ console.log(`eng kattasi ${max}`)
 // }
 // console.log(`yig'indi: ${result}`)
 
+// const num = [1,2,3,4]
+// num.forEach((item) => {
+//  const square = Math.pow(item,2)
+//   console.log(`son: ${item} kvadrati: ${square}`)
+// })
+
+// const num = [1,2,3,4]
+// num.forEach((value) => {
+//  const square = value ** 2
+//   console.log(`son: ${value} kvadrati: ${square}`)
+// })
 
 // KIRITILGAN ISIMNI BOSHINI KATTA QILISH
 // function myFunction(name){
 //   return name.at(0).toUpperCase() + name.slice(1).toLowerCase()
 // }
-
 // const car = 'gentra'
 // console.log(myFunction(car))
+
+// const num = [1, 2, 3, 4];
+// let i = 0;
+
+// do {
+//   const value = num[i];
+//   const square = value ** 2; // Yoki Math.pow(value, 2)
+//   console.log(`Son: ${value}, Kvadrati: ${square}`);
+//   i++;
+// } while (i < num.length);
+
+
+
+// let son = parseInt(prompt('1 dan 10 gacha son kiriting'));
+
+// for(; son < 1 || son > 10;){
+//   son = parseInt(prompt("xato 1 dan 10 1gacha son kiriting"))
+// }
+
+// console.log(`rahmat kiritilgan son ${son}`)
+
+// let parol;
+// do{
+//   parol = prompt('parolni kiriting');
+// }while(parol !== '123');
+
+// console.log(`xush kelibsiz parol to'g'ri kiritildi`)
+
+const narxlar = [5000, 3000, 8000, 1500, 7000];
+let jamiSumma = 0;
+let index = 0;
+
+do {
+    const narx = narxlar[index];
+    console.log("Mahsulot narxi: " + narx);
+    jamiSumma += narx;
+    index++;
+} while (index < narxlar.length);
+
+console.log("Jami summa: " + jamiSumma);
+
 
 
 
