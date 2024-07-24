@@ -735,12 +735,14 @@
 //   num++
 // }while(num <= 10)
 
+
 // 20 gacha juft sonlarni chiqarish
 // let num = 0;
 // do{
 //   console.log(num)
 //   num += 2;
 // }while(num <= 20)
+
 
 // factorial hisoblash
 //   const num = 5;
@@ -809,7 +811,7 @@
 //   count++;
 // } while (count < 3);
 
-// console.log(`Kiritilgan 5 ta sonning eng kattasi: ${max}`);
+// console.log(`Kiritilgan 3 ta sonning eng kattasi: ${max}`);
 
 
 // kiritilgan sonni teskariga o'girish
@@ -949,18 +951,80 @@
 
 // console.log(`xush kelibsiz parol to'g'ri kiritildi`)
 
-const narxlar = [5000, 3000, 8000, 1500, 7000];
-let jamiSumma = 0;
-let index = 0;
+// const narxlar = [5000, 3000, 8000, 1500, 7000];
+// let jamiSumma = 0;
+// let index = 0;
 
-do {
-    const narx = narxlar[index];
-    console.log("Mahsulot narxi: " + narx);
-    jamiSumma += narx;
-    index++;
-} while (index < narxlar.length);
+// do {
+//     const narx = narxlar[index];
+//     console.log("Mahsulot narxi: " + narx);
+//     jamiSumma += narx;
+//     index++;
+// } while (index < narxlar.length);
 
-console.log("Jami summa: " + jamiSumma);
+// console.log("Jami summa: " + jamiSumma);
+
+
+// let choice;
+// while (choice !== "exit") {
+//     choice = prompt("Iltimos, amal tanlang: qo'shish, ayirish, ko'paytirish, bo'lish yoki exit:");
+//     if (choice === "exit") break;
+
+//     let num1 = parseFloat(prompt("Birinchi sonni kiriting:"));
+//     let num2 = parseFloat(prompt("Ikkinchi sonni kiriting:"));
+
+//     switch (choice) {
+//         case "qo'shish":
+//             alert(`Natija: ${num1 + num2}`);
+//             break;
+//         case "ayirish":
+//             alert(`Natija: ${num1 - num2}`);
+//             break;
+//         case "ko'paytirish":
+//             alert(`Natija: ${num1 * num2}`);
+//             break;
+//         case "bo'lish":
+//             alert(`Natija: ${num1 / num2}`);
+//             break;
+//         default:
+//             alert("Noto'g'ri tanlov, qayta urinib ko'ring.");
+//     }
+// }
+ 
+// function getReversedNumbers(max) {
+//     let reversedNumbers = [];
+    
+//     for (let i = max; i >= 1; i-= 5) {
+//       reversedNumbers.push(i);
+//     }
+    
+//     return reversedNumbers;
+//   }
+  
+//   const result = getReversedNumbers(45);
+//   console.log(result);
+  
+
+// function doSomething(n) {
+//     if(n === 0) {
+//       console.log("TASK COMPLETED!")
+//       return
+//     }
+//     console.log("I'm doing something.")
+//     doSomething(n - 1)
+//   }
+//   doSomething(10)
+
+  function doSomething(n) {
+    if (n > 10) {  // Maksimal qiymat chegarasi
+        console.log("Reached maximum limit!");
+        return;
+    }
+    console.log("I'm doing something.");
+    doSomething(n + 1);  // n + 1
+}
+
+doSomething(10);
 
 
 
