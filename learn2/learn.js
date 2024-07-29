@@ -1015,17 +1015,47 @@
 //   }
 //   doSomething(10)
 
-  function doSomething(n) {
-    if (n > 10) {  // Maksimal qiymat chegarasi
-        console.log("Reached maximum limit!");
-        return;
-    }
-    console.log("I'm doing something.");
-    doSomething(n + 1);  // n + 1
-}
+//   function doSomething(n) {
+//     if (n > 10) {  // Maksimal qiymat chegarasi
+//         console.log("Reached maximum limit!");
+//         return;
+//     }
+//     console.log("I'm doing something.");
+//     doSomething(n + 1);  // n + 1
+// }
+// doSomething(10);
 
-doSomething(10);
+// function processUserInput(callback) {
+//   const name = prompt('Ismingizni kiriting:');
+//   callback(name);
+// }
 
+// function greeting(name) {
+//   console.log('Salom, ' + name + '!');
+// }
+
+// processUserInput(greeting);
+
+            // MAP HAQIDA MA'LUMOT
+// const num = [1,2,3,4,5,6,7];
+// const result = num.map((num) => num + 2)
+
+// console.log(result)
+
+const users = [
+  {
+    name: 'Ali'
+  },
+  {
+    name: 'Vali'
+  },
+  {
+    name: "G'ani"
+  },
+];
+
+const result = users.map(user => user.name.toUpperCase())
+console.log(result)
 
 
 
