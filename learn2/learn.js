@@ -1042,23 +1042,61 @@
 
 // console.log(result)
 
-const users = [
-  {
-    name: 'Ali'
-  },
-  {
-    name: 'Vali'
-  },
-  {
-    name: "G'ani"
-  },
-];
+// const users = [
+//   {
+//     name: 'Ali'
+//   },
+//   {
+//     name: 'Vali'
+//   },
+//   {
+//     name: "G'ani"
+//   },
+// ];
 
-const result = users.map(user => user.name.toUpperCase())
+// const result = users.map(user => user.name.toUpperCase())
+// console.log(result)
+
+// 18 yoshga to'g'irlash
+// const ages = [5,6,7,8,12,34,4];
+
+// const result = ages.map(age => age >= 5 ? age : 5 );
+// console.log(result)
+
+// let names = ['alice', 'john', 'charlie']
+// const little = names.map(name => name.at(0).toUpperCase() + name.slice(1).toLowerCase());
+// console.log(little)
+
+// const names = ['ALICE', 'boB', 'ChARLIE'];
+
+// const titleCasedNames = []; // Initialize an empty array to store the transformed names
+// let i = 0
+// do{
+//   const name = names[i];
+//   const titleCasedName = name.charAt(0).toUpperCase() + name.slice(1).toLowerCase();
+//   titleCasedNames.push(titleCasedName);
+//   i++ 
+// }while(i < names.length)
+// console.log(titleCasedNames)
+
+
+// const names = ['ALICE', 'boB', 'ChARLIE'];
+
+// const titleCasedNames = names.map(name => {
+//   const titleCasedName = name.charAt(0).toUpperCase() + name.slice(1).toLowerCase();
+//   return titleCasedName;
+// });
+
+// console.log(titleCasedNames); // ['Alice', 'Bob', 'Charlie']
+
+// const nums = [1,2,3,4]
+
+// const square = nums.map(num => num * 2)
+// console.log(`eskisi ${nums} kvadrati ${square}`)
+
+const names = ['ali', 'vali', 'salim']
+const result = names.map(name => {
+  return name.slice(0, name.length - 1).toLowerCase() +name.charAt(name.length - 1).toUpperCase() 
+})
+
 console.log(result)
-
-
-
-
-
-
