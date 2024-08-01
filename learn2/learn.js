@@ -1094,9 +1094,17 @@
 // const square = nums.map(num => num * 2)
 // console.log(`eskisi ${nums} kvadrati ${square}`)
 
-const names = ['ali', 'vali', 'salim']
-const result = names.map(name => {
-  return name.slice(0, name.length - 1).toLowerCase() +name.charAt(name.length - 1).toUpperCase() 
-})
+// const names = ['ali', 'vali', 'salim']
+// const result = names.map(name => {
+//   return name.slice(0, name.length - 1).toLowerCase() +name.charAt(name.length - 1).toUpperCase() 
+// })
 
-console.log(result)
+// console.log(result)
+
+function factorial(num) {
+  if(num === 0){
+    return 1;
+  }
+  return num * factorial(num -1)
+}
+console.log(factorial(5))
