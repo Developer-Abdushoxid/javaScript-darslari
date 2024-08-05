@@ -56,15 +56,48 @@ const movies = [
 
 // filter metodida: 
 
-const filteredMovie = movies.filter((movie) => {
-    return movie.year > 2010
-})
+// const filteredMovie = movies.filter((movie) => {
+//     return movie.year > 2010
+// })
 
-console.log(filteredMovie)
-
-
+// console.log(filteredMovie)
 
 
+// let numbers = [1,2,3,4]
+// let double = numbers.map((num) => {
+//     return num * 2
+// })
+// console.log(double)
+
+
+// let users = [
+//     {name: 'alice', yosh: 25},
+//     {name: 'john', yosh: 21},
+//     {name: 'bob', yosh: 19},
+// ]
+// let names = users.map((user) => {
+//    return user.yosh += 1
+// })
+// console.log(names)
+
+
+// let numbers = [10, 20, 30];
+// let modifiedNumbers = numbers.map((num, index) => {
+//   console.log('Element:', num);
+//   console.log('Indeks:', index);
+//   return num * 2;
+// });
+
+// console.log(modifiedNumbers); // [20, 40, 60]
+
+// let priceUSD = [10,20,30]
+// let change = 12600;
+// let priceUZB = priceUSD.map((price) => {
+//     return price * change
+// })
+// console.log(priceUZB)
+
+// map -  metodi JavaScriptda massivlar bilan ishlashda juda kuchli va moslashuvchan vositadir. U massiv elementlarini o'zgartirish, hisoblash va qayta ishlashda keng qo'llaniladi.
 
 
 
