@@ -636,18 +636,6 @@
 // }
 
 
-// const money = 32000;
-// const price = 5000;
-// function myFunction(money, price){
-//   let count = 0
-//   do{
-//     money -= price
-//     count ++
-//   }while(money >= price)
-//     return {count, money}
-// }
-// const result = myFunction(money, price);
-// console.log(`Siz ${result.count} ta moshina sotib olasiz va ${result.money} ming so'm pul ortib qoladi`)
 
 // const sum = 32000;
 // const price = 1700;

@@ -28,12 +28,12 @@
 // }
 // console.log(sumRange(10))
 
-const movies = [
-    { name: 'Avatar 3D', year: 2008, rating: 9},
-    { name: 'Titanik 7D', year: 1997, rating: 7},
-    { name: 'Forsaj 5D', year: 2020, rating: 5},
-    { name: 'Avengers 3D', year: 2012, rating: 3},
-]
+// const movies = [
+//     { name: 'Avatar 3D', year: 2008, rating: 9},
+//     { name: 'Titanik 7D', year: 1997, rating: 7},
+//     { name: 'Forsaj 5D', year: 2020, rating: 5},
+//     { name: 'Avengers 3D', year: 2012, rating: 3},
+// ]
 
 // forEach siklida:
 // const newMovies = [];
@@ -246,7 +246,7 @@ const movies = [
 
 
 
-let item1 = [1, 2, 4, 4, 4, 3, 3, 2, 1, 4,5];
+// let item1 = [1, 2, 4, 4, 4, 3, 3, 2, 1, 4,5];
 
 // function ConvertArray(arr) {
 //     let count = {};
