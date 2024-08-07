@@ -104,40 +104,86 @@
 // });
 
 
-// let num = [ 1,2,3,4,5,6]
-// let maxNumber = 0;
-// for (let i = 1; i <= num.length; i++){
-//     if(i < maxNumber){
-//         maxNumber = i
+// let num = [5,2,3,4,5,6]
+
+// let min = Math.min(...num)
+// console.log(min)
+
+
+// let minNumber = num[0];
+// for(let i = 1; i < num.length; i++){
+//     if(num[i] < minNumber){
+//         minNumber = num[i]
+//     }
+// }
+// console.log(minNumber)
+
+
+
+
+
+// let num = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10,11];
+// let sum = 0;
+// boshidan o'rtasigacha
+// for (let i = 0; i < num.length / 2; i ++){
+//     sum += num[i]
+
+// }
+// console.log(sum)
+// // O'rtacha indeks
+// let middleIndex = Math.floor(num.length / 2);
+
+// // Oxiridan boshlab o'rtacha indeksgacha bo'lgan sonlarni qo'shish
+// for (let i = num.length - 1; i >= middleIndex; i--) {
+//   sum += num[i];
+// }
+
+// console.log(sum);
+
+
+
+
+//   function findFactorial(num) {
+//     if (num === 0) return 1
+//     let factorial = num * findFactorial(num - 1)
+//     return factorial;
+//   }
+  
+//   console.log(findFactorial(5)) // 120
+
+// function myFunction (n){
+//     if(n <= 0){
+//         return 0
+//     }else if(n === 1){
+//         return 1
+//     }else{
+//         return myFunction(n - 1) + myFunction(n - 2)
+//     }
+// }
+// console.log(myFunction(10))
+
+
+// function reverseString(str) {
+//     if (str === "") {
+//         return ""; // Asosiy shart
+//     } else {
+//         return reverseString(str.substring(1)) + str.charAt(0); // Rekursiv chaqiriq
+//     }
+// }
+
+// console.log(reverseString("salom")); // "molas"
+
+
+// function fibonacciNum(n){
+//     if(n <= 0){
+//         return 0;
+//     }else if(n === 1){
+//         return 1
+//     }else{
+//         return fibonacciNum( n -1 ) + fibonacciNum(n -2)
 //     }
 // };
-// console.log(maxNumber)
-
-let num = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-let maxNumber = 0;
-let startIndex = Math.floor(num.length / 2); // 5
-for (let i = startIndex; i < num.length; i++) {
-    maxNumber += num[i];
-}
-console.log(`Massivning oxirgis yarmini qo'shgan yig'indi: ${maxNumber}`);
-
-
-
-
-
-// let num1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-// let sum = 0;
-// let halfLength = Math.floor(num1.length / 2); // 5
-// for (let i = 0; i < halfLength; i++) {
-//     sum += num1[i];
-// }
-// console.log(`Massivning bosh qismini qo'shgan yig'indi: ${sum}`);
-
-
-
-
-
-
+// console.log(fibonacciNum(10))
 
 
 
