@@ -144,12 +144,14 @@
 
 
 //   function findFactorial(num) {
-//     if (num === 0) return 1
-//     let factorial = num * findFactorial(num - 1)
-//     return factorial;
+//     if (num === 0){
+//         return 1
+//     } else{
+//      return   num * findFactorial(num - 1)
+//     }
 //   }
   
-//   console.log(findFactorial(5)) // 120
+//   console.log(findFactorial(3)) // 120
 
 // function myFunction (n){
 //     if(n <= 0){
@@ -174,6 +176,7 @@
 // console.log(reverseString("salom")); // "molas"
 
 
+
 // function fibonacciNum(n){
 //     if(n <= 0){
 //         return 0;
@@ -185,6 +188,27 @@
 // };
 // console.log(fibonacciNum(10))
 
+function myFunction(n) {
+    if (n < 0) {
+        return;
+    }
+    if (n % 2 === 0) {
+        console.log(n);
+    }
+    myFunction(n - 1);
+}
+myFunction(10);
+
+// function myFunction(n) {
+//     if (n < 0) {
+//         return;
+//     }
+//     myFunction(n - 1);
+//     if (n % 2 === 0) {
+//         console.log(n);
+//     }
+// }
+// myFunction(10);
 
 
 
