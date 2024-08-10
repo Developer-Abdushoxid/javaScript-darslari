@@ -188,16 +188,16 @@
 // };
 // console.log(fibonacciNum(10))
 
-function myFunction(n) {
-    if (n < 0) {
-        return;
-    }
-    if (n % 2 === 0) {
-        console.log(n);
-    }
-    myFunction(n - 1);
-}
-myFunction(10);
+// function myFunction(n) {
+//     if (n < 0) {
+//         return;
+//     }
+//     if (n % 2 === 0) {
+//         console.log(n);
+//     }
+//     myFunction(n - 1);
+// }
+// myFunction(10);
 
 // function myFunction(n) {
 //     if (n < 0) {
